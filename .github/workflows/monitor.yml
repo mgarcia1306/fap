@@ -3,7 +3,7 @@ name: FARO - API Compra Agil (prueba)
 on:
   schedule:
     # :07, :22, :37, :52 UTC. Evita el minuto 00 de alta carga.
-    - cron: '7,22,37,52 * * * *'
+  - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
