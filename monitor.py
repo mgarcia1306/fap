@@ -17,7 +17,7 @@ OVERLAP = timedelta(minutes=20)
 
 MAX_CHUNKS = 4
 MAX_PAGES = 30
-MAX_ATTEMPTS = 3
+MAX_ATTEMPTS = 4
 
 
 def iso(moment):
@@ -104,8 +104,14 @@ def request_page(ticket, params):
             )
 
         if attempt < MAX_ATTEMPTS:
-            espera = 5 * (2 ** (attempt - 1))
-            print(f"Reintentando en {espera} segundos...")
+            espera = 15 * (2 ** (attempt - 1))
+        
+            print(
+                f"Servidor no disponible. "
+                f"Esperando {espera} segundos antes de reintentar...",
+                flush=True
+            )
+        
             time.sleep(espera)
 
     raise RuntimeError(
