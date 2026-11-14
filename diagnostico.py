@@ -22,7 +22,7 @@ def formato_fecha(fecha):
 
 # Consultamos solamente los últimos cinco minutos
 ahora = datetime.now(timezone.utc)
-inicio = ahora - timedelta(minutes=5)
+inicio = ahora - timedelta(minutes=30)
 
 params = {
     "cambio_desde": formato_fecha(inicio),
