@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-06T14:17:46Z",
+  "last_success": "2026-11-06T18:17:46Z",
   "items": {
     "3928-433-COT26": {
       "changed_at": "2026-11-06T07:10:00.870Z",
@@ -14332,6 +14332,6290 @@
     "4127-130-COT26": {
       "changed_at": "2026-11-06T13:05:01.637Z",
       "status": "proveedor_seleccionado"
+    },
+    "682941-43-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "publicada"
+    },
+    "3478-334-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "cancelada"
+    },
+    "608-6880-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "cancelada"
+    },
+    "853-63-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "desierta"
+    },
+    "4116-71-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "cerrada"
+    },
+    "2170-579-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057498-2638-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "desierta"
+    },
+    "608-6881-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "cancelada"
+    },
+    "812261-469-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "desierta"
+    },
+    "1385462-102-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "desierta"
+    },
+    "1171142-2630-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2133-33-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2628-635-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "cerrada"
+    },
+    "4996-62-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "desierta"
+    },
+    "3703-508-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3977-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2171-285-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "889473-2519-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "889473-2474-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057473-205-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1554-573-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "747-14-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2297-1432-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "437-51-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4906-114-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3588-568-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "514848-577-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2294-2701-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4247-662-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057062-507-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057439-5964-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2460-1057-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4055-316-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2432-898-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2585-1444-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057417-4427-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1388974-405-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1638-916-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "898-1279-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2207-824-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2207-826-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1233613-471-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057541-548-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1589-93-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1380-5175-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2989-397-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1126920-212-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1233613-460-COT26": {
+      "changed_at": "2026-11-06T15:15:00.480Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4284-142-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "cerrada"
+    },
+    "3864-386-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "cancelada"
+    },
+    "2428-1538-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "desierta"
+    },
+    "3326-620-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "desierta"
+    },
+    "2467-779-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "cerrada"
+    },
+    "2467-777-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "cerrada"
+    },
+    "1051425-34-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "cerrada"
+    },
+    "1736-818-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "desierta"
+    },
+    "5952-114-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "cerrada"
+    },
+    "4104-297-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "cerrada"
+    },
+    "1979-431-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-407-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3695-367-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2284-814-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2048-681-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4280-470-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1338-132-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3378-1564-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3594-1024-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2284-810-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1002588-116-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "709129-97-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "634-393-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1501717-104-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2297-1392-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5198-148-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "934-87-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1049-1851-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1175-461-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2376-774-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3409-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4020-1131-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1126920-211-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3507-751-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1011254-506-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-367-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3038-63-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1209004-174-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3986-411-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1049-1853-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2098-782-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2102-503-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1049-1852-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1952-1393-COT26": {
+      "changed_at": "2026-11-06T15:10:01.430Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3117-412-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "5517-527-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2306-1058-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "858-217-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "4152-819-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3597-973-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1058345-92-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1057536-1401-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2863-164-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5083-84-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2981-448-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2403-950-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2464-1631-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3377-167-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "872535-570-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "757-514-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1421874-171-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1288-235-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2594-887-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1134432-749-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "608-6875-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3486-438-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1425525-52-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3016-185-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2832-356-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "desierta"
+    },
+    "843567-205-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1741-593-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "974550-15-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "5907-240-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1058900-88-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2464-1633-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2335-505-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1151549-251-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "desierta"
+    },
+    "5907-239-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1058339-793-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3453-213-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1549-4636-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1556-181-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "547640-222-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3478-332-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cancelada"
+    },
+    "1457902-26-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "952751-233-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "5586-3047-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "843567-204-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1549-4637-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2628-631-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "4195-990-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "desierta"
+    },
+    "2422-734-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1057536-1399-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2923-882-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1421874-172-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1057432-499-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3687-281-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1469-4022-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "905-65-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "4401-173-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2310-113-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1208066-488-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "desierta"
+    },
+    "425-424-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1070329-235-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2546-1171-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1058339-794-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2421-478-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3479-1397-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "4195-984-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "desierta"
+    },
+    "1480074-58-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1421874-173-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3687-282-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "5517-528-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "5434-501-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1126922-958-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1858-6-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2288-756-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2140-240-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "957865-203-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2859-1365-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1641-5908-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3378-1557-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3949-275-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1127-39-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2273-953-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5905-192-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057539-4801-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "229-171-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "578459-902-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "697058-88-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3710-155-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5178-5121-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2048-679-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057417-4428-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-4984-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057550-172-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "4157-883-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "761-218-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "cancelada"
+    },
+    "3506-808-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "1057934-20-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "4055-319-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "564845-132-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "587-222-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "4996-60-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "1405-46-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "desierta"
+    },
+    "867990-827-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "cerrada"
+    },
+    "2013-1943-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "cerrada"
+    },
+    "3046-403-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3734-626-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5513-39-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1232820-114-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "595636-50-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3326-615-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "912-14-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "912-13-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1557-215-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2665-456-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "514862-360-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3603-584-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3731-171-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1485-81-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4848-318-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2450-957-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3838-219-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "582-81-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2705-1732-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4020-1113-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-420-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3665-724-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1078177-970-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1413-532-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079454-685-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057513-264-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1666-352-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4856-353-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1457776-25-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-4982-COT26": {
+      "changed_at": "2026-11-06T15:00:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2917-325-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "cerrada"
+    },
+    "1058012-705-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "cancelada"
+    },
+    "2704-2079-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "desierta"
+    },
+    "2101-328-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "desierta"
+    },
+    "4117-258-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "desierta"
+    },
+    "2366-577-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "desierta"
+    },
+    "1516-322-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "cerrada"
+    },
+    "3365-237-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "cancelada"
+    },
+    "3365-236-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "cancelada"
+    },
+    "3319-77-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "cancelada"
+    },
+    "1577-206-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "769-270-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1704-3816-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4690-367-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "682938-21-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "publicada"
+    },
+    "5083-69-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057049-557-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5620-101-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "777304-3494-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3710-140-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3332-98-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3507-750-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1389488-1077-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1380-5176-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1171142-2638-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "625-372-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-416-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3765-321-COT26": {
+      "changed_at": "2026-11-06T14:55:00.513Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2665-446-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2777-524-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4940-440-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "608-6863-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "547640-207-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2859-1309-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "564162-1183-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2140-234-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "999-6-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1078177-971-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1208910-355-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3784-416-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1250355-32-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "desierta"
+    },
+    "3319-76-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "cancelada"
+    },
+    "1171142-2665-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2328-1280-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "desierta"
+    },
+    "1239966-582-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "cerrada"
+    },
+    "2628-613-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "desierta"
+    },
+    "4499-181-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2332-1070-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "cancelada"
+    },
+    "4455-310-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "desierta"
+    },
+    "799512-1554-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "cerrada"
+    },
+    "1411-1484-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3149-317-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5155-194-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3734-625-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057539-4800-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2805-610-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1208910-354-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1058141-1444-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3110-101-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2757-751-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1209004-173-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4022-782-COT26": {
+      "changed_at": "2026-11-06T14:50:00.847Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3456-87-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "cancelada"
+    },
+    "757-519-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "cancelada"
+    },
+    "1691-2051-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "cancelada"
+    },
+    "3621-431-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "cancelada"
+    },
+    "2393-1520-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "desierta"
+    },
+    "5485-932-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "cerrada"
+    },
+    "1079505-473-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3459-239-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5761-115-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2139-159-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3603-602-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3595-261-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "564162-1187-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1142-173-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3135-167-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5586-3027-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2360-418-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2065-432-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5684-415-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2103-293-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3810-342-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2777-545-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2065-430-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1997-42-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2328-1367-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1555-1641-COT26": {
+      "changed_at": "2026-11-06T14:45:00.563Z",
+      "status": "proveedor_seleccionado"
+    },
+    "507428-431-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "cerrada"
+    },
+    "1058035-337-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "desierta"
+    },
+    "761-214-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "cancelada"
+    },
+    "1430525-32-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3600-207-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2665-445-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2777-548-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4121-28-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2664-720-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1250377-1-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "511505-579-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2062-178-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1464-530-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1458-28-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057417-4444-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2776-867-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3838-207-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "757-481-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057539-4792-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2705-1699-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2065-433-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2065-431-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2065-434-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2505-126-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2036-443-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "608-6831-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079454-686-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1380-5187-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057500-193-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5513-40-COT26": {
+      "changed_at": "2026-11-06T14:40:01.080Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4642-326-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "cerrada"
+    },
+    "1171142-2688-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1111432-448-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "desierta"
+    },
+    "1057498-2672-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "cerrada"
+    },
+    "1393093-368-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "cerrada"
+    },
+    "2292-939-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "desierta"
+    },
+    "3478-331-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "cancelada"
+    },
+    "5952-121-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "cerrada"
+    },
+    "1057498-2671-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "cerrada"
+    },
+    "4377-570-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "cerrada"
+    },
+    "2080-984-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1422824-2014-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "desierta"
+    },
+    "1058043-2051-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "cancelada"
+    },
+    "3594-970-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3882-375-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1414396-118-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1058043-2049-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "509143-42-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "552528-70-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1142-175-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3789-353-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3598-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2123-487-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1161-307-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2705-1712-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4848-323-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1175-411-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2705-1705-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1126920-213-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2013-1937-COT26": {
+      "changed_at": "2026-11-06T14:35:00.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2101-338-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1173460-51-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "539819-521-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2321-247-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "desierta"
+    },
+    "5626-944-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "desierta"
+    },
+    "1457281-105-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1391-717-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "707416-62-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "923842-71-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "697057-153-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "cancelada"
+    },
+    "1622-719-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "desierta"
+    },
+    "1180825-59-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057434-592-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "cancelada"
+    },
+    "3820-1111-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "desierta"
+    },
+    "4239-512-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5418-77-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4057-931-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5225-90-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057430-1184-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1704-3698-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5282-199-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2321-270-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "625-371-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057539-4789-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1233623-1008-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "858-216-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2048-678-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2036-410-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2080-961-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1173460-49-COT26": {
+      "changed_at": "2026-11-06T14:30:01.050Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2393-1527-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057434-586-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3778-296-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2665-444-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057551-293-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4519-288-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "desierta"
+    },
+    "1075963-1378-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2020-232-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4104-325-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "desierta"
+    },
+    "2776-895-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "desierta"
+    },
+    "2483-494-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "cerrada"
+    },
+    "3803-181-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "desierta"
+    },
+    "1057822-81-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5254-500-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3508-823-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4022-779-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5513-37-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1704-3781-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1274907-253-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2268-172-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5515-25-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057513-263-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2015-480-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "608-6774-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1389488-1183-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "439-473-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3361-40-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5194-607-COT26": {
+      "changed_at": "2026-11-06T14:25:00.630Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057387-212-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2912-435-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057429-1768-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2665-443-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1161-306-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5254-501-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "507428-429-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "cerrada"
+    },
+    "1020-198-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "cancelada"
+    },
+    "2176-302-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "desierta"
+    },
+    "3210-67-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "cerrada"
+    },
+    "557639-3448-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "desierta"
+    },
+    "3600-205-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3952-244-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057513-262-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4034-746-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2015-482-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3807-456-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2885-284-COT26": {
+      "changed_at": "2026-11-06T14:20:00.253Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3497-484-COT26": {
+      "changed_at": "2026-11-06T14:05:00.740Z",
+      "status": "cerrada"
+    },
+    "4388-42-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3707-574-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4118-48-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2446-1029-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5960-134-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2771-667-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cerrada"
+    },
+    "1233613-457-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "desierta"
+    },
+    "761-221-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cancelada"
+    },
+    "618923-202-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cancelada"
+    },
+    "1411-1483-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cancelada"
+    },
+    "1063538-2643-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cerrada"
+    },
+    "2710-756-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cerrada"
+    },
+    "1952-1396-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cerrada"
+    },
+    "1247197-40-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cerrada"
+    },
+    "643553-582-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cerrada"
+    },
+    "2981-441-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "desierta"
+    },
+    "2013-1859-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "desierta"
+    },
+    "3948-321-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cerrada"
+    },
+    "3438-198-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cerrada"
+    },
+    "584105-286-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cancelada"
+    },
+    "5492-39-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "desierta"
+    },
+    "5429-113-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "cancelada"
+    },
+    "1480972-872-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4469-362-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "643-262-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1175-431-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1969-702-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1172953-338-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1499900-130-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2548-323-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1353712-29-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4406-664-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1075956-165-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1224953-542-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5062-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2464-1629-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2594-872-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5063-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3706-411-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3742-157-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1621-279-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "867990-820-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5027-COT26": {
+      "changed_at": "2026-11-06T16:15:00.720Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1357605-157-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "682941-48-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "publicada"
+    },
+    "1422824-2024-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "cerrada"
+    },
+    "1057510-1974-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "cerrada"
+    },
+    "1101892-236-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "desierta"
+    },
+    "4777-909-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "desierta"
+    },
+    "2026-553-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "cerrada"
+    },
+    "3820-1124-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1477-64-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1493-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "cerrada"
+    },
+    "575924-41-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "desierta"
+    },
+    "4085-525-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "desierta"
+    },
+    "5178-5149-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "desierta"
+    },
+    "1709-289-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2981-447-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4152-808-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2281-1925-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4091-240-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1134432-742-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5394-681-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4170-252-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "800-7587-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "643-263-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2297-1423-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5051-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2927-422-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5865-154-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4462-311-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3378-1563-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2568-79-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4013-233-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2111-1371-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1447930-532-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3921-456-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1077218-14-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5155-167-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2594-841-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2013-1956-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "918434-301-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1211-90-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2495-612-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4118-47-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1429-31-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2626-668-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "514848-590-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "desierta"
+    },
+    "2580-108-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1627-486-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "4375-728-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2013-1938-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "3030-491-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "759-397-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "desierta"
+    },
+    "813-745-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2184-118-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "5586-3041-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "4939-362-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "4079-363-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2656-1365-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "514862-372-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3888-1085-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2731-1171-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "867990-824-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4373-69-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1627-485-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1057429-1815-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "4314-325-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "desierta"
+    },
+    "218-607-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1627-483-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2704-2152-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1627-484-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2013-1935-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2281-1999-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1469-4026-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1509-207-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "5586-3039-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2216-208-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1091793-156-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1658-1702-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1469-3875-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "desierta"
+    },
+    "1057987-62-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2724-1006-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2013-1933-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "4195-1008-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cancelada"
+    },
+    "681016-53-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "4635-80-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "734-210-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2628-642-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1627-488-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1658-1705-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "673804-15-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1208983-209-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "564953-932-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1658-1710-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "5952-122-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "813-746-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1627-487-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2216-209-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "622847-15-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1057552-656-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "desierta"
+    },
+    "2026-505-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "desierta"
+    },
+    "4776-427-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2345-309-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "1213301-40-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cancelada"
+    },
+    "2585-1330-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "desierta"
+    },
+    "5526-72-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "2013-1928-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "3947-649-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "682941-47-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "publicada"
+    },
+    "2628-640-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "cerrada"
+    },
+    "5416-808-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2450-953-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3868-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1224953-584-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2704-2129-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5441-516-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5441-518-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079967-784-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5034-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057430-1188-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3980-54-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5038-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2395-1123-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5047-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4013-241-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1306643-315-COT26": {
+      "changed_at": "2026-11-06T16:05:01.627Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3596-583-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3730-277-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3553-88-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1389488-1170-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "564953-938-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2324-1127-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3694-404-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3000-1264-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1391-621-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057439-5802-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "979-138-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1524039-12-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3908-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "desierta"
+    },
+    "559322-320-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "cancelada"
+    },
+    "692246-15-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "cerrada"
+    },
+    "858-219-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "cancelada"
+    },
+    "4778-359-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "desierta"
+    },
+    "2927-421-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "desierta"
+    },
+    "3820-1130-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "desierta"
+    },
+    "4170-250-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "desierta"
+    },
+    "1741-594-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "desierta"
+    },
+    "1079967-825-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "desierta"
+    },
+    "559322-322-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "cancelada"
+    },
+    "434-697-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "desierta"
+    },
+    "559322-323-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "cancelada"
+    },
+    "836-98-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "cancelada"
+    },
+    "3000-1289-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1380-5134-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2033-142-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4885-63-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2686-550-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3928-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1719-151-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2298-315-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1062456-90-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2735-1332-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1175-427-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1233615-921-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2585-1482-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3439-139-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3962-416-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4367-429-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4013-240-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5032-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2111-1379-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1389488-1075-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4013-239-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2446-1037-COT26": {
+      "changed_at": "2026-11-06T16:00:00.863Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4777-912-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3508-836-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "41-71-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1651-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3594-1035-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3378-1567-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057634-27-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1233615-925-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2776-898-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "cerrada"
+    },
+    "514848-582-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "desierta"
+    },
+    "2026-556-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "cerrada"
+    },
+    "5586-3045-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "desierta"
+    },
+    "1531341-39-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "cerrada"
+    },
+    "2380-2338-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "desierta"
+    },
+    "2026-502-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "desierta"
+    },
+    "1067526-137-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "cancelada"
+    },
+    "1442808-195-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "cerrada"
+    },
+    "1067526-136-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "cancelada"
+    },
+    "2026-555-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "cerrada"
+    },
+    "1641-5787-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "682941-46-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "publicada"
+    },
+    "4236-689-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2859-1274-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4066-470-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1672-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4777-916-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1274667-432-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "677-36-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3707-576-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-414-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2287-708-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5024-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1224953-559-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1485217-120-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3821-343-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2033-143-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "867990-751-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-376-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5058-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1296107-241-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057417-4453-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4367-436-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3869-831-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1316692-42-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2297-1391-COT26": {
+      "changed_at": "2026-11-06T15:55:00.230Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2680-304-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "675878-31-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4940-445-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2281-1914-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1885-8-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4020-1135-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5153-2046-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3340-247-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2140-241-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "748891-216-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1641-5907-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3445-231-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2332-1079-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cerrada"
+    },
+    "800-7575-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cancelada"
+    },
+    "1057552-655-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "1465-576-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "1078177-955-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "1465-575-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "1641-5935-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cerrada"
+    },
+    "1351-37-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cerrada"
+    },
+    "2411-37-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cancelada"
+    },
+    "933-56-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cerrada"
+    },
+    "1641-5933-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cerrada"
+    },
+    "2026-557-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cerrada"
+    },
+    "2147-484-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "1658-1572-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cerrada"
+    },
+    "3684-182-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "1465-574-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "867990-829-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cerrada"
+    },
+    "3678-509-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "836-96-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "desierta"
+    },
+    "4323-209-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "cancelada"
+    },
+    "1493-569-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2935-155-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1175-421-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4548-650-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4157-898-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3213-110-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1063538-2582-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3378-1562-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1461054-402-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2292-912-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-4909-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2172-26-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5054-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1431841-1359-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "813-743-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5055-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2395-1121-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2147-522-COT26": {
+      "changed_at": "2026-11-06T15:50:00.980Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1058339-761-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "5965-244-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "2343-608-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cancelada"
+    },
+    "4817-561-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "2292-913-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "2292-908-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "2495-624-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cancelada"
+    },
+    "1057402-1387-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "2403-920-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "3351-25-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "1058095-470-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3927-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "564953-939-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2298-311-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2698-258-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2771-641-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2929-658-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1333-20-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "2291-1087-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "1469-3966-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "4491-547-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cancelada"
+    },
+    "1224957-672-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "3620-296-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "701426-424-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3506-760-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "1057389-2158-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "2380-2349-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1208910-379-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "5955-511-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "desierta"
+    },
+    "3853-634-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "cerrada"
+    },
+    "426-197-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "publicada"
+    },
+    "1389488-1111-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-4975-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1395-464-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1346279-65-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4714-13-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "564162-1184-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3749-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3869-865-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1542-66-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2328-1350-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4079-362-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1389183-185-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "41-72-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1058035-354-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1540-1418-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2297-1386-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1380-5133-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1233623-1036-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2421-475-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3714-394-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5666-21-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3826-372-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-413-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "739-29-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5052-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1063538-2564-COT26": {
+      "changed_at": "2026-11-06T15:45:00.750Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3947-635-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2756-217-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3734-618-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4858-702-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "cerrada"
+    },
+    "1641-5932-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "cerrada"
+    },
+    "5067-2395-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "desierta"
+    },
+    "1057486-159-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "desierta"
+    },
+    "2548-344-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "cancelada"
+    },
+    "2343-609-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "cancelada"
+    },
+    "1533460-90-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "cancelada"
+    },
+    "2428-1606-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "desierta"
+    },
+    "623-277-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "cancelada"
+    },
+    "3509-131-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2927-388-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "desierta"
+    },
+    "1242141-30-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2495-622-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5194-581-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2393-1516-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4777-915-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "889473-2496-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2450-955-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1426104-78-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3869-920-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1456-22-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1641-5927-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2859-1261-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3213-112-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1153-19-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4020-1134-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1978-447-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1456839-64-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4445-30-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2296-666-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1233615-902-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5067-2750-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3439-142-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4733-464-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "538598-852-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4091-236-COT26": {
+      "changed_at": "2026-11-06T15:40:00.277Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1024-183-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1063538-2641-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "730566-70-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "4967-1006-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "4020-1129-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "desierta"
+    },
+    "3506-809-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "desierta"
+    },
+    "5052-492-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "1270792-45-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2436-1745-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2026-509-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3213-115-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2062-179-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "5865-182-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "2710-764-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "3849-46-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "2306-1061-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "2432-883-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "desierta"
+    },
+    "3874-295-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "3874-296-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "1641-5930-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "2783-323-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "3611-249-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "desierta"
+    },
+    "2594-893-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "682941-45-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "publicada"
+    },
+    "2626-661-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "desierta"
+    },
+    "3688-301-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2428-1567-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5740-200-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2493-109-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3916-495-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3661-465-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3509-120-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2460-1072-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "720-83-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-389-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "568658-1588-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "538598-851-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1483-101-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3986-412-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5955-512-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "cerrada"
+    },
+    "1805-20-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "889473-2534-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1233623-1035-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1129525-157-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2793-1112-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "800-7585-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1250353-37-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-405-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3602-112-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2436-1670-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057448-332-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2859-1273-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1175-415-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2927-431-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1627-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "575437-4-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1165649-276-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4081-127-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1514-637-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3384-158-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2698-247-COT26": {
+      "changed_at": "2026-11-06T15:35:01.010Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057547-2494-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5060-1025-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3506-770-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5178-5418-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4034-752-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1532-357-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2710-773-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "cancelada"
+    },
+    "682941-44-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "publicada"
+    },
+    "1691-2037-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "desierta"
+    },
+    "3710-154-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "desierta"
+    },
+    "1180919-28-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "cerrada"
+    },
+    "1380-5209-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1388974-411-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "cancelada"
+    },
+    "188-492-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1389488-1158-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "desierta"
+    },
+    "2378-248-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "desierta"
+    },
+    "1353712-27-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "desierta"
+    },
+    "3789-342-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "desierta"
+    },
+    "5358-317-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "cancelada"
+    },
+    "4230-93-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1691-1916-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "desierta"
+    },
+    "3980-52-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2297-1367-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5541-152-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2297-1433-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5394-682-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1239966-583-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1058035-360-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2407-636-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4364-540-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3820-1132-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1554-577-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1058758-269-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2407-652-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3714-404-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1058094-1572-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3378-1568-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2484-301-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2674-938-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1943-162-COT26": {
+      "changed_at": "2026-11-06T15:30:00.363Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3506-795-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1641-5913-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3684-185-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4364-542-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3742-155-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "931-131-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1165649-275-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "949-182-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "757-520-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "cancelada"
+    },
+    "3785-256-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "desierta"
+    },
+    "4452-554-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "desierta"
+    },
+    "3415-141-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "cerrada"
+    },
+    "4337-542-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "desierta"
+    },
+    "1758-277-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "desierta"
+    },
+    "3030-504-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "cancelada"
+    },
+    "1063538-2640-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "cerrada"
+    },
+    "1079713-303-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "desierta"
+    },
+    "889473-2385-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "desierta"
+    },
+    "5038-67-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "cerrada"
+    },
+    "1057499-359-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "cerrada"
+    },
+    "5965-243-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "cerrada"
+    },
+    "1395-463-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1667-328-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2184-111-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "cerrada"
+    },
+    "2721-525-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4414-769-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4605-79-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2852-262-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4057-942-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1589-91-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "538598-850-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1589-94-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057431-277-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1223542-251-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4067-22-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3439-144-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1063538-2609-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2777-544-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "608-6838-COT26": {
+      "changed_at": "2026-11-06T15:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1111432-450-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "desierta"
+    },
+    "1057439-5965-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "cerrada"
+    },
+    "2101-310-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "desierta"
+    },
+    "2140-237-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "desierta"
+    },
+    "1709-305-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "cancelada"
+    },
+    "2186-445-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "cancelada"
+    },
+    "1079639-1106-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4777-914-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2777-517-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2424-1952-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2735-1331-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1407-207-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1615-7-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "desierta"
+    },
+    "1172445-179-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1589-92-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2790-307-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1589-95-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "777304-3482-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "desierta"
+    },
+    "701426-430-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "673407-24-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5586-2976-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3359-70-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2103-294-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1480972-870-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079576-144-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2145-468-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2102-502-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2026-508-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2284-785-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2626-664-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3591-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2422-721-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2033-140-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2287-714-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5178-5164-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4020-1132-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1540-1417-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4013-250-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1380-5210-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1224953-565-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057415-178-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "483-464-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2366-581-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "701426-406-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2332-965-COT26": {
+      "changed_at": "2026-11-06T15:20:00.757Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2387-434-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "5586-3046-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1057430-1190-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3687-283-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1532192-40-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1001-56-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1058339-798-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1020-190-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2656-1260-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "1057429-1814-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "3016-183-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "623-279-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2408-587-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2464-1628-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "2628-638-COT26": {
+      "changed_at": "2026-11-06T15:05:00.970Z",
+      "status": "cerrada"
+    },
+    "682943-23-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "publicada"
+    },
+    "3927-458-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "cerrada"
+    },
+    "3704-228-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "desierta"
+    },
+    "5626-819-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "desierta"
+    },
+    "2827-513-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "cancelada"
+    },
+    "5485-920-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "cerrada"
+    },
+    "1057494-665-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2132-209-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "proveedor_seleccionado"
+    },
+    "867990-805-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2335-496-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5586-2971-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1885-10-COT26": {
+      "changed_at": "2026-11-06T17:15:00.493Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2495-614-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5960-138-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057503-2847-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1316-20-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3149-315-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3506-814-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2335-491-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3876-232-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "cerrada"
+    },
+    "1312459-207-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "desierta"
+    },
+    "1982-19-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "cancelada"
+    },
+    "1469-3923-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2132-231-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1173446-48-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4377-561-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1706-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057533-317-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2013-1917-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1080286-209-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5738-59-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1498185-197-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "760-76-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4134-735-COT26": {
+      "changed_at": "2026-11-06T17:10:00.173Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057503-2846-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1557-200-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1461-53-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "5067-2765-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "645-43-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1430715-333-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2069-2844-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2409-1852-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "3486-441-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "4919-13-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2799-97-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1221016-210-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1681-230-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1641-5941-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1658-1711-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1962-347-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1057498-2642-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2258-1002-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1208066-504-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1016-65-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "5067-2764-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2013-1948-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1389488-1209-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1422830-63-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2407-653-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1242121-410-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "3030-493-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "696750-67-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2656-1375-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "3210-62-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "4919-12-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "867990-832-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "3210-65-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1057429-1816-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2069-2842-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "557639-3678-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1950-975-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "635-675-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1395-469-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "5178-5409-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "desierta"
+    },
+    "2409-1854-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2296-670-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3962-413-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1667-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3714-415-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4594-226-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1232565-247-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2446-1047-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1480972-880-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3340-248-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2322-755-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cerrada"
+    },
+    "1057503-2844-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1070620-4214-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4221-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4219-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4217-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4215-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4226-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "3131-215-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1070620-4218-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "5865-165-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "desierta"
+    },
+    "1070620-4224-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "2335-490-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2395-1125-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1063538-2616-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "cerrada"
+    },
+    "618923-200-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "cancelada"
+    },
+    "3714-422-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "cancelada"
+    },
+    "1230750-221-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "cancelada"
+    },
+    "1498285-14-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "cerrada"
+    },
+    "1063538-2646-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "cerrada"
+    },
+    "799512-1549-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "cerrada"
+    },
+    "1030177-100-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "cancelada"
+    },
+    "2833-841-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5750-13-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3597-935-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2674-937-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1568-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2057-445-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2343-606-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2292-916-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1287766-92-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "604944-89-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "584105-278-COT26": {
+      "changed_at": "2026-11-06T16:55:00.727Z",
+      "status": "proveedor_seleccionado"
+    },
+    "886182-249-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "cerrada"
+    },
+    "584105-264-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "desierta"
+    },
+    "3131-214-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1629-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2080-995-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1134432-743-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "desierta"
+    },
+    "3904-983-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "cerrada"
+    },
+    "564162-1202-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "cerrada"
+    },
+    "2404-691-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "cerrada"
+    },
+    "1557465-1-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "desierta"
+    },
+    "3904-984-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "cerrada"
+    },
+    "1230750-225-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "desierta"
+    },
+    "1389183-186-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "cerrada"
+    },
+    "2292-976-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "desierta"
+    },
+    "1079689-530-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "cancelada"
+    },
+    "1621-280-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3842-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "800-7535-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4355-1114-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2585-1528-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1298357-273-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1298357-274-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3980-57-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079650-207-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2395-1126-COT26": {
+      "changed_at": "2026-11-06T16:50:00.403Z",
+      "status": "proveedor_seleccionado"
+    },
+    "875-24-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1516-334-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "800-7591-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5586-3048-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2341-635-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4081-128-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2484-298-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "desierta"
+    },
+    "509876-68-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "desierta"
+    },
+    "3861-123-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "cerrada"
+    },
+    "1062018-138-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "desierta"
+    },
+    "5952-127-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "cancelada"
+    },
+    "4414-735-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "cerrada"
+    },
+    "2036-440-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1289649-86-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "cancelada"
+    },
+    "3962-412-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3597-988-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5586-3010-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2013-1936-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2057-446-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079445-778-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2335-482-COT26": {
+      "changed_at": "2026-11-06T16:45:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1238111-130-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2292-946-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4355-1113-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1428662-165-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "cerrada"
+    },
+    "2432-826-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "desierta"
+    },
+    "1057822-80-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "cerrada"
+    },
+    "2628-636-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "cerrada"
+    },
+    "1057503-2842-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1691-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "cerrada"
+    },
+    "3000-1231-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "desierta"
+    },
+    "3707-562-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5965-246-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "cerrada"
+    },
+    "3506-764-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1223542-258-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3962-408-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3568-445-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1298357-277-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5441-478-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "608-6879-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2273-928-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1375761-356-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1224953-526-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1178386-22-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3904-988-COT26": {
+      "changed_at": "2026-11-06T16:40:00.373Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2724-999-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1577-209-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2033-146-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2755-364-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3706-398-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5586-3029-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "889473-2518-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "557639-3676-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1057389-2159-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "5153-2088-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1969-719-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "desierta"
+    },
+    "1079967-828-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "desierta"
+    },
+    "3477-594-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "2273-965-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "desierta"
+    },
+    "2343-593-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1559-611-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "2335-506-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "418-1761-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "564953-931-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1250357-107-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "4118-45-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "desierta"
+    },
+    "5148-194-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1951-229-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cancelada"
+    },
+    "5067-2763-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "867990-831-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "5178-5478-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "4152-820-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1641-5939-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1658-1712-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "3811-403-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1107277-93-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "2343-596-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1681-229-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cerrada"
+    },
+    "1485937-42-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "cancelada"
+    },
+    "1126920-204-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2380-2369-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2291-1106-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2033-144-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1516-332-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2013-1934-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1719-153-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1255790-133-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4322-590-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079969-173-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4377-537-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3707-561-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2292-968-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1621-278-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1480067-95-COT26": {
+      "changed_at": "2026-11-06T16:35:00.923Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2446-1038-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "582-84-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "578459-894-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3889-414-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2686-567-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3038-64-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2756-218-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057539-4861-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "cerrada"
+    },
+    "1057536-1406-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "cerrada"
+    },
+    "623-248-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1058043-2044-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "cerrada"
+    },
+    "1079967-827-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "desierta"
+    },
+    "2080-957-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2735-1363-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057510-1985-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "cerrada"
+    },
+    "800-7590-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3485-1114-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1422832-270-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5178-5357-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079576-142-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1486-43-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2115-298-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1224953-528-COT26": {
+      "changed_at": "2026-11-06T16:30:00.250Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3864-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "746483-31-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3753-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4091-250-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "777304-3419-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3707-560-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1406-41-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057439-5937-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cerrada"
+    },
+    "1549-4638-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cerrada"
+    },
+    "1411-1494-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cancelada"
+    },
+    "4058-363-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cancelada"
+    },
+    "1063538-2645-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cerrada"
+    },
+    "1663-986-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cancelada"
+    },
+    "557639-3675-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cerrada"
+    },
+    "1113403-145-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cancelada"
+    },
+    "1389488-1117-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "cerrada"
+    },
+    "1663-998-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "desierta"
+    },
+    "507428-491-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "desierta"
+    },
+    "5456-42-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3553-94-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1213002-383-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1480972-865-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2791-170-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1288819-69-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4377-550-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "564953-929-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2292-947-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1113403-109-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1175-433-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4772-4-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4013-238-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3962-415-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1270792-46-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "548238-116-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1051173-131-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1526274-14-COT26": {
+      "changed_at": "2026-11-06T16:25:01.030Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1579-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "578459-848-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1075952-41-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3858-401-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2422-668-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5667-199-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "desierta"
+    },
+    "3820-1122-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2358-617-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "cerrada"
+    },
+    "2428-1564-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "desierta"
+    },
+    "1079969-175-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "cancelada"
+    },
+    "2674-928-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "cerrada"
+    },
+    "434-696-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "desierta"
+    },
+    "3994-267-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "cerrada"
+    },
+    "3759-319-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "cerrada"
+    },
+    "4085-522-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "desierta"
+    },
+    "2429-1235-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "cerrada"
+    },
+    "2483-524-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3707-558-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2013-1922-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1647-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "578459-906-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4118-49-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4414-765-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4091-241-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1134432-735-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1621-276-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1287766-93-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057417-4442-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1003473-5061-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3378-1551-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5441-498-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1952-1412-COT26": {
+      "changed_at": "2026-11-06T16:20:00.827Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057536-1354-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "584105-280-COT26": {
+      "changed_at": "2026-11-06T16:10:00.410Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5394-677-COT26": {
+      "changed_at": "2026-11-06T18:15:00.377Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5067-2755-COT26": {
+      "changed_at": "2026-11-06T18:15:00.377Z",
+      "status": "cancelada"
+    },
+    "617807-2527-COT26": {
+      "changed_at": "2026-11-06T18:15:00.377Z",
+      "status": "cerrada"
+    },
+    "697224-112-COT26": {
+      "changed_at": "2026-11-06T18:15:00.377Z",
+      "status": "cerrada"
+    },
+    "758-548-COT26": {
+      "changed_at": "2026-11-06T18:15:00.377Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1469-3654-COT26": {
+      "changed_at": "2026-11-06T18:15:00.377Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2153-495-COT26": {
+      "changed_at": "2026-11-06T18:10:00.877Z",
+      "status": "desierta"
+    },
+    "867990-637-COT26": {
+      "changed_at": "2026-11-06T18:10:00.877Z",
+      "status": "cerrada"
+    },
+    "5952-124-COT26": {
+      "changed_at": "2026-11-06T18:10:00.877Z",
+      "status": "cerrada"
+    },
+    "3597-989-COT26": {
+      "changed_at": "2026-11-06T18:10:00.877Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2322-754-COT26": {
+      "changed_at": "2026-11-06T18:10:00.877Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1697-COT26": {
+      "changed_at": "2026-11-06T18:10:00.877Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2371-402-COT26": {
+      "changed_at": "2026-11-06T18:10:00.877Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1057491-1993-COT26": {
+      "changed_at": "2026-11-06T18:10:00.877Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5394-680-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1389584-128-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "2057-453-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "2422-737-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "5707-42-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1091793-158-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1057402-1413-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "2462-239-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1079505-496-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "3994-268-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "3909-355-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1641-5950-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1057402-1415-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1978-451-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1242121-411-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "5251-1344-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "2656-1374-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1057062-509-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1422051-331-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "2403-955-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "3904-990-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "734-211-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "2674-942-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "2401-909-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1042-42-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1213444-362-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "354-110-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "5282-250-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "5952-123-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1091793-157-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "623-281-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "cerrada"
+    },
+    "1007793-224-COT26": {
+      "changed_at": "2026-11-06T18:05:00.983Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5586-3040-COT26": {
+      "changed_at": "2026-11-06T18:00:00.130Z",
+      "status": "cancelada"
+    },
+    "905-62-COT26": {
+      "changed_at": "2026-11-06T18:00:00.130Z",
+      "status": "desierta"
+    },
+    "2343-610-COT26": {
+      "changed_at": "2026-11-06T18:00:00.130Z",
+      "status": "cancelada"
+    },
+    "1362-10-COT26": {
+      "changed_at": "2026-11-06T18:00:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2371-420-COT26": {
+      "changed_at": "2026-11-06T18:00:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "931-132-COT26": {
+      "changed_at": "2026-11-06T18:00:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3017-873-COT26": {
+      "changed_at": "2026-11-06T18:00:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2080-988-COT26": {
+      "changed_at": "2026-11-06T18:00:00.130Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1759-127-COT26": {
+      "changed_at": "2026-11-06T17:55:00.840Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1577-213-COT26": {
+      "changed_at": "2026-11-06T17:55:00.840Z",
+      "status": "proveedor_seleccionado"
+    },
+    "948-167-COT26": {
+      "changed_at": "2026-11-06T17:55:00.840Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4079-356-COT26": {
+      "changed_at": "2026-11-06T17:55:00.840Z",
+      "status": "cerrada"
+    },
+    "5153-2102-COT26": {
+      "changed_at": "2026-11-06T17:55:00.840Z",
+      "status": "cancelada"
+    },
+    "2013-1964-COT26": {
+      "changed_at": "2026-11-06T17:55:00.840Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5420-95-COT26": {
+      "changed_at": "2026-11-06T17:55:00.840Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3891-227-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "cerrada"
+    },
+    "2298-327-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "cerrada"
+    },
+    "3000-1281-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "desierta"
+    },
+    "4964-53-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1079454-689-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "cerrada"
+    },
+    "2912-438-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "cerrada"
+    },
+    "2322-753-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5394-686-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1422-20-COT26": {
+      "changed_at": "2026-11-06T17:50:00.207Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1641-5949-COT26": {
+      "changed_at": "2026-11-06T17:45:00.913Z",
+      "status": "cerrada"
+    },
+    "1516-350-COT26": {
+      "changed_at": "2026-11-06T17:45:00.913Z",
+      "status": "cerrada"
+    },
+    "1641-5947-COT26": {
+      "changed_at": "2026-11-06T17:45:00.913Z",
+      "status": "cerrada"
+    },
+    "1250357-108-COT26": {
+      "changed_at": "2026-11-06T17:45:00.913Z",
+      "status": "cerrada"
+    },
+    "726931-21-COT26": {
+      "changed_at": "2026-11-06T17:45:00.913Z",
+      "status": "cerrada"
+    },
+    "2428-1608-COT26": {
+      "changed_at": "2026-11-06T17:45:00.913Z",
+      "status": "desierta"
+    },
+    "2279-794-COT26": {
+      "changed_at": "2026-11-06T17:45:00.913Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2371-387-COT26": {
+      "changed_at": "2026-11-06T17:45:00.913Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2912-436-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "cerrada"
+    },
+    "1108338-132-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "desierta"
+    },
+    "4351-488-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "cerrada"
+    },
+    "2912-441-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "cerrada"
+    },
+    "5035-126-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "cerrada"
+    },
+    "1430707-1759-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "cerrada"
+    },
+    "2994-59-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "cerrada"
+    },
+    "3174-223-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "cerrada"
+    },
+    "2279-796-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3671-18-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1425524-56-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3868-111-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2033-148-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2287-705-COT26": {
+      "changed_at": "2026-11-06T17:40:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1658-1724-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "1057501-3808-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "5282-246-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "3335-1453-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "1221016-235-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "3871-85-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "desierta"
+    },
+    "1658-1713-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "889473-2433-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "1057492-1019-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "1053139-176-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "1057389-2153-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "2784-38-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "1173460-54-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "3502-393-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "3608-653-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "cerrada"
+    },
+    "1230851-67-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4174-124-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1362-8-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1230851-68-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1108338-131-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1620-209-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3671-17-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2672-34-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1230851-69-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "807-43-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4355-1115-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2279-792-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3409-205-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1108338-102-COT26": {
+      "changed_at": "2026-11-06T17:35:01.060Z",
+      "status": "proveedor_seleccionado"
+    },
+    "806208-108-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "cancelada"
+    },
+    "4738-214-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "cerrada"
+    },
+    "2773-396-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "desierta"
+    },
+    "617807-2524-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "cerrada"
+    },
+    "5965-247-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "cerrada"
+    },
+    "4103-155-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1422039-307-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1407-220-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4377-556-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5209-2147-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1108338-117-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1210674-102-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1070620-4108-COT26": {
+      "changed_at": "2026-11-06T17:30:00.323Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4066-464-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "cerrada"
+    },
+    "3512-182-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "desierta"
+    },
+    "545598-1247-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "cerrada"
+    },
+    "2825-270-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "cerrada"
+    },
+    "1389488-1172-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "cerrada"
+    },
+    "4609-304-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4058-361-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3512-200-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4716-17-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2585-1341-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "299-129-COT26": {
+      "changed_at": "2026-11-06T17:25:01.053Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1272220-13-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3511-41-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "3511-40-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "5153-1954-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3704-231-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "desierta"
+    },
+    "892203-16-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "1057429-1804-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "1380-5178-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "3000-1253-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "desierta"
+    },
+    "1057498-2645-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "1641-5944-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "4919-11-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "1641-5945-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "604944-88-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "desierta"
+    },
+    "1057509-1066-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "cerrada"
+    },
+    "2279-790-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "proveedor_seleccionado"
+    },
+    "800-7588-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1593-178-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1485937-39-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2033-147-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4609-305-COT26": {
+      "changed_at": "2026-11-06T17:20:00.767Z",
+      "status": "proveedor_seleccionado"
+    },
+    "3486-440-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2561-223-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "5155-209-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "2409-1859-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "4817-580-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "622847-14-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "1020285-27-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "cerrada"
+    },
+    "3704-229-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "4173-174-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "800-7555-COT26": {
+      "changed_at": "2026-11-06T17:05:00.947Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2035-80-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2495-615-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "2905-610-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "5750-15-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "proveedor_seleccionado"
+    },
+    "1969-728-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4220-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4222-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "618923-201-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4225-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
+    },
+    "1070620-4212-COT26": {
+      "changed_at": "2026-11-06T17:00:01.100Z",
+      "status": "cancelada"
     }
   }
 }
