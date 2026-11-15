@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-06T22:17:46Z",
+  "last_success": "2026-11-07T02:17:46Z",
   "items": {
     "3928-433-COT26": {
       "changed_at": "2026-11-06T07:10:00.870Z",
@@ -20903,6 +20903,1166 @@
     },
     "734-182-COT26": {
       "changed_at": "2026-11-06T21:20:00.847Z",
+      "status": "cerrada"
+    },
+    "1591-150-COT26": {
+      "changed_at": "2026-11-06T23:10:00.950Z",
+      "status": "cerrada"
+    },
+    "1005498-83-COT26": {
+      "changed_at": "2026-11-06T22:30:00.063Z",
+      "status": "cerrada"
+    },
+    "635-651-COT26": {
+      "changed_at": "2026-11-07T00:15:00.203Z",
+      "status": "cerrada"
+    },
+    "697055-55-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3927-402-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1191164-7-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2294-2384-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1075963-1283-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3692-283-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4359-108-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3983-366-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2395-989-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "6-80-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057495-654-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1024-167-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5251-1027-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057498-2433-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058339-660-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1541-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3355-312-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "838108-121-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1338462-70-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1171142-2389-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1213002-331-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1171142-2420-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1195-512-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057501-3507-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1650-170-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3349-241-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2409-1686-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2854-826-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "859378-378-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "777304-3256-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "875646-2317-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "608-6245-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057509-968-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1518-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3884-551-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1526-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1502-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1663-925-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1691-1833-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1380-4647-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "748891-209-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2013-1653-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "511734-34-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3950-642-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2409-1388-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2215-743-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5952-91-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3390-236-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1655-156-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057489-401-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5485-805-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2859-1016-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3349-245-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3497-436-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1003473-4504-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4239-490-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1403-423-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2145-443-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057822-70-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "898-1166-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2591-2253-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057503-2544-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1523-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057439-5568-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3853-573-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "682944-20-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1391-572-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "630424-592-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "557639-2955-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5052-356-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1469-3331-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1952-1303-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2395-972-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1488-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5358-215-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2744-267-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2467-700-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "608-6246-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "757-420-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2591-2243-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "494-1061-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2360-336-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2427-1111-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2961-869-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3927-393-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1430705-260-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "316-498-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "619133-1245-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1691-1836-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1209-293-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5660-29-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1004823-104-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "595636-48-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057539-4441-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2371-377-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1804-26-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2381-766-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057439-5549-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2935-142-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1380-4737-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1075963-1277-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1070620-3703-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057049-533-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1380-4757-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2731-1106-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3284-448-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4375-671-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3969-63-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058339-659-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3486-374-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5434-449-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1469-3316-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2371-380-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "619133-1253-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3891-190-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2771-578-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1485942-13-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3853-579-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1962-310-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4690-355-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2724-854-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5865-135-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1641-5377-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1705-393-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2281-1753-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1070620-3675-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "867990-648-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2427-1130-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1691-1842-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5350-435-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1019183-63-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4704-319-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1070620-3530-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057501-3501-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2591-2251-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2912-378-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "617807-2295-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5194-487-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5358-213-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5661-8-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1028897-659-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2793-847-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1430553-62-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2281-1752-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1704-3493-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3927-392-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2997-95-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2360-335-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1556-164-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1430707-1631-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4239-487-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2484-245-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "759-311-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "619133-1238-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1523-1001-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "867990-616-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4494-617-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057439-5478-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "608-6249-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2467-701-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2771-585-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2281-1755-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "619133-1252-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2297-1339-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2436-1493-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1549-4164-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4058-302-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5060-954-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057429-1608-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1482-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057439-5678-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5504-361-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2409-1681-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2127-73-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1213444-298-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4291-1390-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3378-1446-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2297-1320-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3117-379-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2594-781-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1171142-2412-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4477-286-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1480972-643-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "557639-2953-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1028897-683-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1380-4713-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1405-35-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "369-148-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3834-130-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3196-226-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2724-873-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3853-569-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1410-366-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057439-5517-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2215-744-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1170507-79-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "218-550-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1475-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1549-4230-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2371-370-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3927-403-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1523-1000-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "617807-2356-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2332-856-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1213444-294-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058024-1476-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3934-16-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058078-872-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057536-1142-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1260057-223-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1667-310-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2371-383-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2753-33-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1331921-71-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2403-838-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1172953-292-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2585-1216-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3765-285-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2591-2252-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4703-270-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1641-5511-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1171142-2419-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2803-199-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1075956-145-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "425-372-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3558-155-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2294-2393-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1208446-14-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1480972-642-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "4562-460-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2591-2249-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1058345-81-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3593-371-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3355-311-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1382-329-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3927-398-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "711-196-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057430-1050-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "608-6241-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1430707-1632-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2360-340-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1430707-1640-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5060-960-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "418-1544-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057501-3500-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1623-338-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1070997-51-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1523-997-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5434-451-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2731-1105-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057501-3509-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1331921-70-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5660-28-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2546-1088-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2731-1096-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2591-2250-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1260057-221-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "619133-1251-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1002772-2643-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2981-388-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057510-1756-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057439-5500-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1480972-903-COT26": {
+      "changed_at": "2026-11-06T23:45:00.997Z",
+      "status": "cancelada"
+    },
+    "2827-508-COT26": {
+      "changed_at": "2026-11-06T23:35:00.797Z",
+      "status": "cerrada"
+    },
+    "3597-980-COT26": {
+      "changed_at": "2026-11-06T23:30:00.490Z",
+      "status": "cerrada"
+    },
+    "872535-561-COT26": {
+      "changed_at": "2026-11-07T00:50:00.430Z",
+      "status": "cerrada"
+    },
+    "4379-182-COT26": {
+      "changed_at": "2026-11-07T00:50:00.430Z",
+      "status": "cerrada"
+    },
+    "3714-418-COT26": {
+      "changed_at": "2026-11-07T00:40:00.660Z",
+      "status": "cerrada"
+    },
+    "3891-226-COT26": {
+      "changed_at": "2026-11-07T00:25:00.757Z",
+      "status": "cerrada"
+    },
+    "3497-471-COT26": {
+      "changed_at": "2026-11-07T00:25:00.757Z",
+      "status": "cerrada"
+    },
+    "1058024-1492-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "557639-2954-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "697055-53-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3658-486-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "3485-990-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "1057501-3497-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2409-1656-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2546-1091-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "2424-1716-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "754-102-COT26": {
+      "changed_at": "2026-11-07T00:05:01.367Z",
+      "status": "cancelada"
+    },
+    "5434-515-COT26": {
+      "changed_at": "2026-11-07T02:10:01.187Z",
+      "status": "cerrada"
+    },
+    "3017-859-COT26": {
+      "changed_at": "2026-11-07T02:00:01.477Z",
+      "status": "cerrada"
+    },
+    "2296-675-COT26": {
+      "changed_at": "2026-11-07T01:55:00.300Z",
+      "status": "cancelada"
+    },
+    "546437-274-COT26": {
+      "changed_at": "2026-11-07T01:50:00.970Z",
+      "status": "cerrada"
+    },
+    "1000813-405-COT26": {
+      "changed_at": "2026-11-07T01:40:01.173Z",
+      "status": "cerrada"
+    },
+    "1062018-136-COT26": {
+      "changed_at": "2026-11-07T01:40:01.173Z",
+      "status": "cerrada"
+    },
+    "2923-885-COT26": {
+      "changed_at": "2026-11-07T01:25:00.747Z",
       "status": "cerrada"
     }
   }
