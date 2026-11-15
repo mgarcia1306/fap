@@ -1,0 +1,21 @@
+name: Diagnostico 4030-244-COT26 (solo lectura)
+on:
+  push:
+    branches:
+      - diagnostico/compra-4030-244
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Probar ventanas API v2
+        env:
+          CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
+          PYTHONUNBUFFERED: '1'
+        run: python diagnostico_codigo.py
