@@ -1,0 +1,202 @@
+"""Piloto FARO: sincroniza cambios de Compra Ágil v2 hacia Supabase.
+Solo usa librería estándar. No envía correos ni modifica state.json.
+"""
+import hashlib
+import json
+import os
+import random
+import time
+from datetime import datetime, timedelta, timezone
+from urllib.error import HTTPError, URLError
+from urllib.parse import urlencode, quote
+from urllib.request import Request, urlopen
+
+API_URL = "https://api2.mercadopublico.cl/v2/compra-agil"
+SOURCE = "compra_agil_v2"
+OVERLAP = timedelta(minutes=20)
+WINDOW = timedelta(hours=1)
+MAX_PAGES = 30
+MAX_ATTEMPTS = 4
+
+
+def iso(dt):
+    return dt.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
+def parse_dt(value):
+    return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
+
+
+def http_json(url, method="GET", headers=None, body=None):
+    payload = None if body is None else json.dumps(body, ensure_ascii=False).encode("utf-8")
+    request = Request(url, data=payload, headers=headers or {}, method=method)
+    for attempt in range(MAX_ATTEMPTS):
+        try:
+            with urlopen(request, timeout=35) as response:
+                raw = response.read()
+                return json.loads(raw) if raw else None
+        except HTTPError as exc:
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == MAX_ATTEMPTS - 1:
+                detail = exc.read(250).decode("utf-8", errors="replace")
+                raise RuntimeError(f"HTTP {exc.code} en {url.split('?')[0]}: {detail}") from exc
+            retry_after = exc.headers.get("Retry-After", "")
+            delay = int(retry_after) if retry_after.isdigit() else 2 ** attempt * 5
+        except (TimeoutError, URLError) as exc:
+            if attempt == MAX_ATTEMPTS - 1:
+                raise RuntimeError("Agotados reintentos de conexión") from exc
+            delay = 2 ** attempt * 5
+        time.sleep(min(delay, 90) + random.random())
+    raise RuntimeError("Error de conexión inesperado")
+
+
+class Store:
+    def __init__(self):
+        self.url = os.environ["SUPABASE_URL"].rstrip("/") + "/rest/v1"
+        self.key = os.environ["SUPABASE_SECRET_KEY"]
+        self.headers = {"apikey": self.key, "Content-Type": "application/json"}
+        # Las claves nuevas sb_secret_ no son JWT y no deben usarse como Bearer.
+        if not self.key.startswith("sb_secret_"):
+            self.headers["Authorization"] = "Bearer " + self.key
+
+    def request(self, table, method="GET", params=None, data=None, prefer=None):
+        url = self.url + "/" + table
+        if params:
+            url += "?" + urlencode(params, safe="(),.*")
+        headers = dict(self.headers)
+        if prefer:
+            headers["Prefer"] = prefer
+        return http_json(url, method, headers, data)
+
+    def cursor(self):
+        rows = self.request("sincronizaciones", params={
+            "select": "ultimo_cambio_procesado_at",
+            "fuente": "eq." + SOURCE,
+            "limit": 1,
+        })
+        return parse_dt(rows[0]["ultimo_cambio_procesado_at"]) if rows and rows[0]["ultimo_cambio_procesado_at"] else None
+
+    def upsert(self, table, records, conflict):
+        if not records:
+            return []
+        return self.request(table, "POST", {"on_conflict": conflict}, records,
+                            "resolution=merge-duplicates,return=representation")
+
+    def save_cursor(self, dt, count):
+        self.upsert("sincronizaciones", [{
+            "fuente": SOURCE, "ultimo_cambio_procesado_at": iso(dt),
+            "ultima_ejecucion_at": iso(datetime.now(timezone.utc)),
+            "ultimo_exito_at": iso(datetime.now(timezone.utc)),
+            "estado": "correcto", "registros_procesados": count,
+            "ultimo_error": None, "actualizado_at": iso(datetime.now(timezone.utc)),
+        }], "fuente")
+
+
+def fetch_changes(ticket, since, until):
+    all_items = []
+    params = {"cambio_desde": iso(since), "cambio_hasta": iso(until),
+              "tamano_pagina": 50, "ordenar_por": "FechaUltimaModificacion"}
+    for page in range(1, MAX_PAGES + 1):
+        params["numero_pagina"] = page
+        response = http_json(API_URL + "?" + urlencode(params),
+                             headers={"ticket": ticket, "Accept": "application/json"})
+        if not isinstance(response, dict) or response.get("success") != "OK":
+            raise RuntimeError("Respuesta de ChileCompra inválida o sin éxito")
+        payload = response.get("payload")
+        if not isinstance(payload, dict):
+            raise RuntimeError("Payload inválido")
+        items, pagination = payload.get("items"), payload.get("paginacion")
+        if not isinstance(items, list) or not isinstance(pagination, dict):
+            raise RuntimeError("Estructura de paginación inesperada")
+        pages = int(pagination["total_paginas"])
+        if pages > MAX_PAGES:
+            raise RuntimeError(f"Demasiadas páginas ({pages}); no se avanza cursor")
+        all_items.extend(items)
+        if page >= pages:
+            return all_items
+    raise RuntimeError("Paginación incompleta")
+
+
+def as_text(value):
+    if isinstance(value, dict):
+        return str(value.get("nombre") or value.get("descripcion") or value.get("codigo") or "")
+    return str(value) if value is not None else None
+
+
+def normalize(item):
+    code = item.get("codigo")
+    if not isinstance(code, str) or not code.strip():
+        raise ValueError("Compra Ágil sin código")
+    dates = item.get("fechas") or {}
+    if not isinstance(dates, dict) or not dates.get("fecha_ultimo_cambio"):
+        raise ValueError(f"Compra Ágil {code} sin fecha_ultimo_cambio")
+    state = item.get("estado") or {}
+    if not isinstance(state, dict):
+        raise ValueError(f"Compra Ágil {code} con estado inválido")
+    buyer = item.get("organismo") or item.get("comprador")
+    amount = item.get("monto_disponible")
+    if isinstance(amount, dict):
+        amount = amount.get("valor")
+    record = {
+        "fuente": SOURCE, "codigo": code.strip(),
+        "titulo": item.get("nombre"), "descripcion": item.get("descripcion"),
+        "organismo": as_text(buyer),
+        "estado_codigo": as_text(state.get("codigo")),
+        "estado_nombre": as_text(state.get("nombre") or state.get("descripcion")),
+        "fecha_publicacion": dates.get("fecha_publicacion"),
+        "fecha_cierre": dates.get("fecha_cierre"),
+        "fecha_ultimo_cambio": dates["fecha_ultimo_cambio"],
+        "datos_originales": item,
+        "actualizada_at": iso(datetime.now(timezone.utc)),
+    }
+    if amount is not None and not isinstance(amount, (dict, list)):
+        record["monto"] = amount
+    signature = {key: record.get(key) for key in (
+        "codigo", "titulo", "descripcion", "organismo", "estado_codigo",
+        "fecha_publicacion", "fecha_cierre", "fecha_ultimo_cambio", "monto")}
+    digest = hashlib.sha256(json.dumps(signature, sort_keys=True, ensure_ascii=False,
+                                       default=str).encode("utf-8")).hexdigest()
+    return record, digest
+
+
+def synchronize_window(db, ticket, since, until):
+    entries = fetch_changes(ticket, since, until)
+    unique = {}
+    for item in entries:
+        record, digest = normalize(item)
+        unique[record["codigo"]] = (record, digest)
+    for code, (record, digest) in unique.items():
+        # Upsert idempotente. Si falla el historial, el cursor NO avanza y
+        # el siguiente intento reinsertará el evento usando la misma huella.
+        rows = db.upsert("oportunidades", [record], "fuente,codigo")
+        if not rows or not rows[0].get("id"):
+            raise RuntimeError(f"No se confirmó el guardado de {code}")
+        db.upsert("cambios_oportunidad", [{
+            "oportunidad_id": rows[0]["id"],
+            "fecha_cambio_fuente": record["fecha_ultimo_cambio"],
+            "estado_nuevo": record["estado_codigo"],
+            "huella_cambio": digest,
+            "datos_cambio": record["datos_originales"],
+        }], "oportunidad_id,huella_cambio")
+    db.save_cursor(until, len(unique))
+    return len(entries), len(unique)
+
+
+def main():
+    ticket = os.environ["CHILECOMPRA_TICKET"]
+    db = Store()
+    now = datetime.now(timezone.utc)
+    saved = db.cursor()
+    cursor = saved or now - WINDOW
+    if cursor > now:
+        raise RuntimeError("Cursor de sincronización está en el futuro")
+    until = min(cursor + WINDOW, now)
+    since = cursor - OVERLAP
+    print(f"FARO piloto: {iso(since)} → {iso(until)}", flush=True)
+    total, unique = synchronize_window(db, ticket, since, until)
+    print(f"OK: entradas={total}, códigos únicos={unique}, cursor={iso(until)}", flush=True)
+    if until < now:
+        print("Hay intervalos pendientes para futuras ejecuciones.", flush=True)
+
+
+if __name__ == "__main__":
+    main()
