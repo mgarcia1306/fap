@@ -10,6 +10,7 @@ from datetime import datetime, timedelta, timezone
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, quote
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 API_URL = "https://api2.mercadopublico.cl/v2/compra-agil"
 SOURCE = "compra_agil_v2"
@@ -17,6 +18,22 @@ OVERLAP = timedelta(minutes=20)
 WINDOW = timedelta(hours=1)
 MAX_PAGES = 30
 MAX_ATTEMPTS = 4
+CHILE_TZ = ZoneInfo("America/Santiago")
+
+
+def horario_operativo(moment):
+    """08:00–00:00 todos los días; 00:00–02:00 si el día anterior fue hábil.
+
+    Por ejemplo, sábado 01:00 sigue siendo la ventana del viernes.
+    No supone que el domingo carezca de publicaciones.
+    """
+    local = moment.astimezone(CHILE_TZ)
+    if local.hour >= 8:
+        return True
+    if local.hour < 2:
+        ayer = (local.date() - timedelta(days=1)).weekday()
+        return ayer < 5
+    return False
 
 
 def iso(dt):
@@ -182,9 +199,12 @@ def synchronize_window(db, ticket, since, until):
 
 
 def main():
+    now = datetime.now(timezone.utc)
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not horario_operativo(now):
+        print("Fuera de horario FARO (America/Santiago). Sin consultas.", flush=True)
+        return
     ticket = os.environ["CHILECOMPRA_TICKET"]
     db = Store()
-    now = datetime.now(timezone.utc)
     saved = db.cursor()
     cursor = saved or now - WINDOW
     if cursor > now:
