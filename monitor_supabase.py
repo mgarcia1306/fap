@@ -44,6 +44,21 @@ def parse_dt(value):
     return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
 
 
+def api_clock(moment):
+    """El filtro cambio_* usa hora de pared de Chile con sufijo Z (observado 15-11-2026)."""
+    return moment.astimezone(CHILE_TZ).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def api_local_to_utc(value):
+    """Los campos de fecha de Compra Ágil v2 observados usan reloj chileno incluso con Z."""
+    if not value:
+        return None
+    naive = datetime.fromisoformat(str(value).removesuffix("Z"))
+    if naive.tzinfo is not None:
+        naive = naive.replace(tzinfo=None)
+    return iso(naive.replace(tzinfo=CHILE_TZ).astimezone(timezone.utc))
+
+
 def http_json(url, method="GET", headers=None, body=None):
     payload = None if body is None else json.dumps(body, ensure_ascii=False).encode("utf-8")
     request = Request(url, data=payload, headers=headers or {}, method=method)
@@ -110,7 +125,7 @@ class Store:
 
 def fetch_changes(ticket, since, until):
     all_items = []
-    params = {"cambio_desde": iso(since), "cambio_hasta": iso(until),
+    params = {"cambio_desde": api_clock(since), "cambio_hasta": api_clock(until),
               "tamano_pagina": 50, "ordenar_por": "FechaUltimaModificacion"}
     for page in range(1, MAX_PAGES + 1):
         params["numero_pagina"] = page
@@ -149,19 +164,27 @@ def normalize(item):
     state = item.get("estado") or {}
     if not isinstance(state, dict):
         raise ValueError(f"Compra Ágil {code} con estado inválido")
-    buyer = item.get("organismo") or item.get("comprador")
-    amount = item.get("monto_disponible")
+    institution = item.get("institucion") or {}
+    buyer = institution.get("organismo_comprador") if isinstance(institution, dict) else None
+    if not buyer:
+        buyer = item.get("organismo") or item.get("comprador")
+    amounts = item.get("montos") or {}
+    amount = amounts.get("monto_disponible") if isinstance(amounts, dict) else None
+    if amount is None:
+        amount = item.get("monto_disponible")
     if isinstance(amount, dict):
         amount = amount.get("valor")
     record = {
         "fuente": SOURCE, "codigo": code.strip(),
         "titulo": item.get("nombre"), "descripcion": item.get("descripcion"),
         "organismo": as_text(buyer),
+        "region_codigo": institution.get("region") if isinstance(institution, dict) else None,
+        "moneda": amounts.get("moneda") if isinstance(amounts, dict) else None,
         "estado_codigo": as_text(state.get("codigo")),
-        "estado_nombre": as_text(state.get("nombre") or state.get("descripcion")),
-        "fecha_publicacion": dates.get("fecha_publicacion"),
-        "fecha_cierre": dates.get("fecha_cierre"),
-        "fecha_ultimo_cambio": dates["fecha_ultimo_cambio"],
+        "estado_nombre": as_text(state.get("glosa") or state.get("nombre") or state.get("descripcion")),
+        "fecha_publicacion": api_local_to_utc(dates.get("fecha_publicacion")),
+        "fecha_cierre": api_local_to_utc(dates.get("fecha_cierre")),
+        "fecha_ultimo_cambio": api_local_to_utc(dates["fecha_ultimo_cambio"]),
         "datos_originales": item,
         "actualizada_at": iso(datetime.now(timezone.utc)),
     }
@@ -169,7 +192,8 @@ def normalize(item):
         record["monto"] = amount
     signature = {key: record.get(key) for key in (
         "codigo", "titulo", "descripcion", "organismo", "estado_codigo",
-        "fecha_publicacion", "fecha_cierre", "fecha_ultimo_cambio", "monto")}
+        "fecha_publicacion", "fecha_cierre", "fecha_ultimo_cambio", "monto",
+        "region_codigo", "moneda", "estado_nombre")}
     digest = hashlib.sha256(json.dumps(signature, sort_keys=True, ensure_ascii=False,
                                        default=str).encode("utf-8")).hexdigest()
     return record, digest
