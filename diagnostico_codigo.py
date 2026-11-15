@@ -17,8 +17,8 @@ scenarios = [
 for label, filters in scenarios:
     print(f"=== {label} ===", flush=True)
     found = False
-    for page in range(1, 16):
-        params = {**filters, "tamano_pagina": 100, "numero_pagina": page}
+    for page in range(1, 31):
+        params = {**filters, "tamano_pagina": 50, "numero_pagina": page}
         url = URL + "?" + urlencode(params)
         req = Request(url, headers={"ticket": ticket, "Accept": "application/json"})
         try:
@@ -26,7 +26,7 @@ for label, filters in scenarios:
                 body = json.load(res)
         except (HTTPError, URLError, TimeoutError) as exc:
             print(f"Consulta fallida en pagina {page}: {type(exc).__name__}; HTTP {getattr(exc, 'code', '?')}", flush=True)
-            break
+            raise
         payload = body.get("payload") or {}
         items = payload.get("items") or []
         paging = payload.get("paginacion") or {}
