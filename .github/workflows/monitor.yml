@@ -1,12 +1,9 @@
 
 name: FARO - API Compra Agil (prueba)
 
-# Ejecutar automáticamente cada 15 minutos
-# o manualmente desde GitHub Actions.
+# Monitor antiguo: conservado para diagnosticos manuales.
+# El nuevo monitor Supabase administra el horario programado.
 on:
-  schedule:
-    - cron: '*/15 * * * *'
-
   workflow_dispatch:
 
 # Permitir guardar el historial en el repositorio

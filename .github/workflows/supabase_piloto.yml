@@ -1,6 +1,9 @@
-name: FARO - Piloto Supabase (manual)
+name: FARO - Piloto Supabase (horario Chile)
 
 on:
+  schedule:
+    # Cron UTC cada 15 min; Python filtra America/Santiago, con horario de verano.
+    - cron: '*/15 0-6,11-23 * * *'
   workflow_dispatch:
 
 permissions:
@@ -23,6 +26,8 @@ jobs:
           python-version: '3.12'
       - name: Validar sintaxis Python
         run: python -m py_compile monitor_supabase.py
+      - name: Probar limites del horario operativo
+        run: python -m unittest -v test_horario_faro.py
       - name: Verificar secrets requeridos
         env:
           CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
@@ -36,4 +41,5 @@ jobs:
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
           SUPABASE_URL: https://kqoxbbhazxlnqifzvfzh.supabase.co
           PYTHONUNBUFFERED: '1'
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: python monitor_supabase.py
