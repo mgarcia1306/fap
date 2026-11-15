@@ -9,9 +9,7 @@ URL = "https://api2.mercadopublico.cl/v2/compra-agil"
 TARGET = "4030-244-COT26"
 ticket = os.environ["CHILECOMPRA_TICKET"]
 scenarios = [
-    ("cambio_00_03_cl", {"cambio_desde": "2026-11-15T03:00:00Z", "cambio_hasta": "2026-11-15T06:00:00Z"}),
-    ("cambio_14_15_nov", {"cambio_desde": "2026-11-14T20:00:00Z", "cambio_hasta": "2026-11-15T08:00:00Z"}),
-    ("ttl_6_horas", {"ttl_cambio_ms": 21600000}),
+    ("cambio_00_02_utc", {"cambio_desde": "2026-11-15T00:00:00Z", "cambio_hasta": "2026-11-15T02:00:00Z"}),
 ]
 
 for label, filters in scenarios:
