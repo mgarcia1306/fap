@@ -1,0 +1,27 @@
+name: FARO - Tests de recuperacion
+
+on:
+  push:
+    branches:
+      - feature/recuperacion-atrasos
+  pull_request:
+    paths:
+      - monitor_supabase.py
+      - test_recuperacion_atrasos.py
+      - test_horario_faro.py
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validar sintaxis
+        run: python -m py_compile monitor_supabase.py
+      - name: Ejecutar pruebas unitarias
+        run: python -m unittest -v test_horario_faro.py test_recuperacion_atrasos.py
