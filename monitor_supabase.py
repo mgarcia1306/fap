@@ -18,6 +18,9 @@ OVERLAP = timedelta(minutes=20)
 WINDOW = timedelta(hours=1)
 MAX_PAGES = 30
 MAX_ATTEMPTS = 4
+MAX_CHUNKS_PER_RUN = 4
+MAX_RUNTIME_SECONDS = 8 * 60
+MIN_REMAINING_SECONDS = 60
 CHILE_TZ = ZoneInfo("America/Santiago")
 
 
@@ -198,6 +201,47 @@ def synchronize_window(db, ticket, since, until):
     return len(entries), len(unique)
 
 
+def recover_backlog(db, ticket, now, max_chunks=MAX_CHUNKS_PER_RUN,
+                    deadline=None):
+    """Procesa tramos consecutivos sin saltarse ni adelantar el cursor.
+
+    El avance se confirma en Supabase dentro de synchronize_window, solo
+    después de guardar todas las oportunidades y sus cambios.
+    """
+    cursor = db.cursor() or now - WINDOW
+    if cursor > now:
+        raise RuntimeError("Cursor de sincronización está en el futuro")
+    processed = 0
+    total_records = 0
+
+    while cursor < now and processed < max_chunks:
+        if deadline is not None and time.monotonic() + MIN_REMAINING_SECONDS >= deadline:
+            print("Presupuesto de tiempo agotado: continuaremos en la siguiente ejecución.",
+                  flush=True)
+            break
+        until = min(cursor + WINDOW, now)
+        since = cursor - OVERLAP
+        print(f"Tramo {processed + 1}/{max_chunks}: {iso(since)} → {iso(until)}",
+              flush=True)
+        total, unique = synchronize_window(db, ticket, since, until)
+        cursor = until
+        processed += 1
+        total_records += total
+        print(f"OK tramo: entradas={total}, códigos únicos={unique}, cursor={iso(cursor)}",
+              flush=True)
+
+    pending = max(timedelta(0), now - cursor)
+    print(f"Resumen: tramos={processed}, registros={total_records}, "
+          f"pendiente_horas={pending.total_seconds()/3600:.2f}",
+          flush=True)
+    if pending:
+        print("Quedan intervalos pendientes; se recuperarán en próximas ejecuciones.",
+              flush=True)
+    else:
+        print("Sincronización al día al inicio de esta ejecución.", flush=True)
+    return processed, cursor
+
+
 def main():
     now = datetime.now(timezone.utc)
     if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not horario_operativo(now):
@@ -205,17 +249,8 @@ def main():
         return
     ticket = os.environ["CHILECOMPRA_TICKET"]
     db = Store()
-    saved = db.cursor()
-    cursor = saved or now - WINDOW
-    if cursor > now:
-        raise RuntimeError("Cursor de sincronización está en el futuro")
-    until = min(cursor + WINDOW, now)
-    since = cursor - OVERLAP
-    print(f"FARO piloto: {iso(since)} → {iso(until)}", flush=True)
-    total, unique = synchronize_window(db, ticket, since, until)
-    print(f"OK: entradas={total}, códigos únicos={unique}, cursor={iso(until)}", flush=True)
-    if until < now:
-        print("Hay intervalos pendientes para futuras ejecuciones.", flush=True)
+    deadline = time.monotonic() + MAX_RUNTIME_SECONDS
+    recover_backlog(db, ticket, now, deadline=deadline)
 
 
 if __name__ == "__main__":
