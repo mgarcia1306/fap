@@ -1,6 +1,7 @@
 """Piloto FARO: sincroniza cambios de Compra Ágil v2 hacia Supabase.
 Solo usa librería estándar. No envía correos ni modifica state.json.
 """
+import argparse
 import hashlib
 import json
 import os
@@ -14,6 +15,8 @@ from zoneinfo import ZoneInfo
 
 API_URL = "https://api2.mercadopublico.cl/v2/compra-agil"
 SOURCE = "compra_agil_v2"
+RECENT_CURSOR = "compra_agil_v2_reciente"
+RECENT_LOOKBACK = timedelta(minutes=90)
 OVERLAP = timedelta(minutes=20)
 WINDOW = timedelta(hours=1)
 MAX_PAGES = 30
@@ -87,10 +90,10 @@ class Store:
             headers["Prefer"] = prefer
         return http_json(url, method, headers, data)
 
-    def cursor(self):
+    def cursor(self, fuente=SOURCE):
         rows = self.request("sincronizaciones", params={
             "select": "ultimo_cambio_procesado_at",
-            "fuente": "eq." + SOURCE,
+            "fuente": "eq." + fuente,
             "limit": 1,
         })
         return parse_dt(rows[0]["ultimo_cambio_procesado_at"]) if rows and rows[0]["ultimo_cambio_procesado_at"] else None
@@ -101,9 +104,9 @@ class Store:
         return self.request(table, "POST", {"on_conflict": conflict}, records,
                             "resolution=merge-duplicates,return=representation")
 
-    def save_cursor(self, dt, count):
+    def save_cursor(self, dt, count, fuente=SOURCE):
         self.upsert("sincronizaciones", [{
-            "fuente": SOURCE, "ultimo_cambio_procesado_at": iso(dt),
+            "fuente": fuente, "ultimo_cambio_procesado_at": iso(dt),
             "ultima_ejecucion_at": iso(datetime.now(timezone.utc)),
             "ultimo_exito_at": iso(datetime.now(timezone.utc)),
             "estado": "correcto", "registros_procesados": count,
@@ -185,18 +188,12 @@ def synchronize_window(db, ticket, since, until):
         record, digest = normalize(item)
         unique[record["codigo"]] = (record, digest)
     for code, (record, digest) in unique.items():
-        # Upsert idempotente. Si falla el historial, el cursor NO avanza y
-        # el siguiente intento reinsertará el evento usando la misma huella.
-        rows = db.upsert("oportunidades", [record], "fuente,codigo")
-        if not rows or not rows[0].get("id"):
+        # Una única transacción PostgreSQL guarda la oportunidad y el historial.
+        # Una versión antigua nunca reemplaza una modificación más reciente.
+        result = db.request("rpc/faro_guardar_oportunidad", method="POST",
+                            data={"p_registro": record, "p_huella": digest})
+        if not isinstance(result, int) or result <= 0:
             raise RuntimeError(f"No se confirmó el guardado de {code}")
-        db.upsert("cambios_oportunidad", [{
-            "oportunidad_id": rows[0]["id"],
-            "fecha_cambio_fuente": record["fecha_ultimo_cambio"],
-            "estado_nuevo": record["estado_codigo"],
-            "huella_cambio": digest,
-            "datos_cambio": record["datos_originales"],
-        }], "oportunidad_id,huella_cambio")
     db.save_cursor(until, len(unique))
     return len(entries), len(unique)
 
@@ -242,15 +239,54 @@ def recover_backlog(db, ticket, now, max_chunks=MAX_CHUNKS_PER_RUN,
     return processed, cursor
 
 
+def monitor_actualidad(db, ticket, now):
+    """Consulta los cambios recientes sin depender del cursor histórico.
+
+    El recuperador histórico cubre eventuales huecos si GitHub omite un cron.
+    """
+    desde = now - RECENT_LOOKBACK
+    hasta = now
+    print(f"FARO actualidad: {iso(desde)} → {iso(hasta)}", flush=True)
+    # No usamos synchronize_window porque su cursor es el histórico.
+    entries = fetch_changes(ticket, desde, hasta)
+    unique = {}
+    for item in entries:
+        record, digest = normalize(item)
+        code = record["codigo"]
+        old = unique.get(code)
+        if old is None or parse_dt(record["fecha_ultimo_cambio"]) >= parse_dt(old[0]["fecha_ultimo_cambio"]):
+            unique[code] = (record, digest)
+    for code, (record, digest) in unique.items():
+        result = db.request("rpc/faro_guardar_oportunidad", method="POST",
+                            data={"p_registro": record, "p_huella": digest})
+        if not isinstance(result, int) or result <= 0:
+            raise RuntimeError(f"Fallo persistencia de {code}")
+    db.save_cursor(hasta, len(unique), fuente=RECENT_CURSOR)
+    nuevas_hoy = sum(1 for record, _ in unique.values()
+                    if record.get("fecha_publicacion")
+                    and parse_dt(record["fecha_publicacion"]).astimezone(CHILE_TZ).date()
+                    == now.astimezone(CHILE_TZ).date())
+    print(f"Actualidad OK: cambios={len(entries)}, oportunidades_distintas={len(unique)}, "
+          f"publicadas_hoy_en_ventana={nuevas_hoy}", flush=True)
+    return len(unique)
+
+
 def main():
+    parser = argparse.ArgumentParser(description="FARO Compra Ágil → Supabase")
+    parser.add_argument("--modo", choices=("historico", "actualidad"),
+                        default="historico")
+    args = parser.parse_args()
     now = datetime.now(timezone.utc)
     if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and not horario_operativo(now):
         print("Fuera de horario FARO (America/Santiago). Sin consultas.", flush=True)
         return
     ticket = os.environ["CHILECOMPRA_TICKET"]
     db = Store()
-    deadline = time.monotonic() + MAX_RUNTIME_SECONDS
-    recover_backlog(db, ticket, now, deadline=deadline)
+    if args.modo == "actualidad":
+        monitor_actualidad(db, ticket, now)
+    else:
+        deadline = time.monotonic() + MAX_RUNTIME_SECONDS
+        recover_backlog(db, ticket, now, deadline=deadline)
 
 
 if __name__ == "__main__":
