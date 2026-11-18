@@ -1,0 +1,43 @@
+name: FARO - Monitor de actualidad
+
+on:
+  schedule:
+    # Minutos desplazados para evitar el congestionamiento del minuto 00.
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: faro-actualidad
+  cancel-in-progress: false
+
+jobs:
+  reciente:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validar código y pruebas
+        run: |
+          python -m py_compile monitor_supabase.py
+          python -m unittest -v test_actualidad.py test_horario_faro.py
+      - name: Verificar credenciales
+        env:
+          CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: |
+          test -n "$CHILECOMPRA_TICKET"
+          test -n "$SUPABASE_SECRET_KEY"
+      - name: Consultar cambios recientes
+        env:
+          CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          SUPABASE_URL: https://kqoxbbhazxlnqifzvfzh.supabase.co
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          PYTHONUNBUFFERED: '1'
+        run: python monitor_supabase.py --modo actualidad
