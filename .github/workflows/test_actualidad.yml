@@ -1,0 +1,21 @@
+name: FARO - Tests monitor actualidad
+on:
+  push:
+    branches:
+      - feature/monitor-actualidad
+  pull_request:
+    paths:
+      - monitor_supabase.py
+      - test_actualidad.py
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m py_compile monitor_supabase.py
+      - run: python -m unittest -v test_actualidad.py test_recuperacion_atrasos.py test_horario_faro.py
