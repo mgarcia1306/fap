@@ -186,7 +186,10 @@ def synchronize_window(db, ticket, since, until):
     unique = {}
     for item in entries:
         record, digest = normalize(item)
-        unique[record["codigo"]] = (record, digest)
+        code = record["codigo"]
+        previous = unique.get(code)
+        if previous is None or parse_dt(record["fecha_ultimo_cambio"]) >= parse_dt(previous[0]["fecha_ultimo_cambio"]):
+            unique[code] = (record, digest)
     for code, (record, digest) in unique.items():
         # Una única transacción PostgreSQL guarda la oportunidad y el historial.
         # Una versión antigua nunca reemplaza una modificación más reciente.
