@@ -30,6 +30,8 @@ jobs:
         run: python -m unittest -v test_horario_faro.py
       - name: Probar recuperacion de intervalos
         run: python -m unittest -v test_recuperacion_atrasos.py
+      - name: Probar subdivisiones de paginacion
+        run: python -m unittest -v test_paginacion.py
       - name: Verificar secrets requeridos
         env:
           CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
