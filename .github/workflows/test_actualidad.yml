@@ -18,4 +18,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m py_compile monitor_supabase.py
-      - run: python -m unittest -v test_actualidad.py test_recuperacion_atrasos.py test_horario_faro.py
+      - run: python -m unittest -v test_actualidad.py test_recuperacion_atrasos.py test_horario_faro.py test_paginacion.py

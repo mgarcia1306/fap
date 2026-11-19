@@ -24,4 +24,4 @@ jobs:
       - name: Validar sintaxis
         run: python -m py_compile monitor_supabase.py
       - name: Ejecutar pruebas unitarias
-        run: python -m unittest -v test_horario_faro.py test_recuperacion_atrasos.py
+        run: python -m unittest -v test_horario_faro.py test_recuperacion_atrasos.py test_paginacion.py

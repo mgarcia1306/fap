@@ -20,6 +20,8 @@ RECENT_LOOKBACK = timedelta(minutes=90)
 OVERLAP = timedelta(minutes=20)
 WINDOW = timedelta(hours=1)
 MAX_PAGES = 30
+MIN_SPLIT_WINDOW = timedelta(minutes=2)
+MAX_SPLIT_DEPTH = 7
 MAX_ATTEMPTS = 4
 MAX_CHUNKS_PER_RUN = 4
 MAX_RUNTIME_SECONDS = 8 * 60
@@ -114,7 +116,12 @@ class Store:
         }], "fuente")
 
 
-def fetch_changes(ticket, since, until):
+class TooManyPagesError(RuntimeError):
+    """La API anuncia más páginas de las que aceptamos por solicitud."""
+
+
+def _fetch_pages(ticket, since, until):
+    """Descarga todas las páginas de un subintervalo o falla sin datos parciales."""
     all_items = []
     params = {"cambio_desde": iso(since), "cambio_hasta": iso(until),
               "tamano_pagina": 50, "ordenar_por": "FechaUltimaModificacion"}
@@ -132,11 +139,48 @@ def fetch_changes(ticket, since, until):
             raise RuntimeError("Estructura de paginación inesperada")
         pages = int(pagination["total_paginas"])
         if pages > MAX_PAGES:
-            raise RuntimeError(f"Demasiadas páginas ({pages}); no se avanza cursor")
+            raise TooManyPagesError(f"ChileCompra anuncia {pages} páginas")
         all_items.extend(items)
         if page >= pages:
             return all_items
     raise RuntimeError("Paginación incompleta")
+
+
+def fetch_changes(ticket, since, until, depth=0):
+    """Reduce intervalos saturados sin omitir páginas ni adelantar cursores.
+
+    Ambos lados incluyen el punto medio para proteger eventos en el límite.
+    Los resultados idénticos de esa frontera se deduplican por contenido.
+    """
+    try:
+        return _fetch_pages(ticket, since, until)
+    except TooManyPagesError as exc:
+        span = until - since
+        if depth >= MAX_SPLIT_DEPTH or span <= MIN_SPLIT_WINDOW:
+            raise RuntimeError(
+                f"Intervalo {iso(since)} → {iso(until)} sigue saturado "
+                f"tras {depth} divisiones; no se avanza cursor"
+            ) from exc
+        midpoint = since + span / 2
+        # Los parámetros API se serializan en segundos: evitamos mitades
+        # que colapsen en la misma marca temporal.
+        midpoint = midpoint.replace(microsecond=0)
+        if midpoint <= since or midpoint >= until:
+            raise RuntimeError("Intervalo demasiado pequeño para subdividir") from exc
+        print(f"Intervalo saturado ({exc}). Dividiendo "
+              f"{iso(since)} → {iso(midpoint)} → {iso(until)}",
+              flush=True)
+        left = fetch_changes(ticket, since, midpoint, depth + 1)
+        right = fetch_changes(ticket, midpoint, until, depth + 1)
+        merged = []
+        seen = set()
+        for item in left + right:
+            fingerprint = json.dumps(item, ensure_ascii=False, sort_keys=True,
+                                     separators=(",", ":"))
+            if fingerprint not in seen:
+                seen.add(fingerprint)
+                merged.append(item)
+        return merged
 
 
 def as_text(value):
