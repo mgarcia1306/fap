@@ -3,7 +3,7 @@ import unittest
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 from monitor_supabase import (monitor_actualidad, RECENT_CURSOR,
-    api_wallclock_chile_as_utc, pertenece_piloto, PILOT_START, PILOT_END)
+    api_wallclock_chile_as_utc, pertenece_piloto, PILOT_START)
 
 NOW = datetime(2026, 11, 20, 22, 30, tzinfo=timezone.utc)
 
@@ -33,7 +33,7 @@ class ActualidadTest(unittest.TestCase):
         self.assertEqual(api_wallclock_chile_as_utc(invierno).isoformat(),
                          "2026-07-20T17:30:00+00:00")
 
-    def test_piloto_filtra_inicio_en_chile_y_fin_exclusivo(self):
+    def test_piloto_filtra_inicio_en_chile_y_sigue_indefinidamente(self):
         anterior = compra("ANT-1-COT26", "2026-11-20T19:00:00Z",
                           "2026-11-20 18:50")
         inicio = compra("NUE-1-COT26", "2026-11-20T19:00:00Z",
@@ -42,7 +42,7 @@ class ActualidadTest(unittest.TestCase):
                           "2026-12-20 00:00")
         self.assertFalse(pertenece_piloto(anterior))
         self.assertTrue(pertenece_piloto(inicio))
-        self.assertFalse(pertenece_piloto(al_final))
+        self.assertTrue(pertenece_piloto(al_final))
 
     def test_cambio_de_compra_anterior_no_se_ingresa(self):
         db = FakeDB()
@@ -57,9 +57,8 @@ class ActualidadTest(unittest.TestCase):
         self.assertEqual(len(db.ingest), 1)
         self.assertEqual(db.ingest[0]["p_registro"]["codigo"], "NUE-1-COT26")
 
-    def test_fuera_de_fechas_no_consulta(self):
-        for momento in (PILOT_START.astimezone(timezone.utc)-timedelta(seconds=1),
-                        PILOT_END.astimezone(timezone.utc)):
+    def test_antes_de_inicio_no_consulta(self):
+        for momento in (PILOT_START.astimezone(timezone.utc)-timedelta(seconds=1),):
             db = FakeDB()
             with patch("monitor_supabase.fetch_publications") as pubs, \
                  patch("monitor_supabase.fetch_changes") as changes:
