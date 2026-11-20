@@ -1,9 +1,8 @@
 name: FARO - Piloto Supabase (horario Chile)
 
+# Recuperación histórica pausada: ejecución manual disponible.
+# No se elimina información de Supabase ni se altera el cursor histórico.
 on:
-  schedule:
-    # Cron UTC cada 15 min; Python filtra America/Santiago, con horario de verano.
-    - cron: '*/15 0-6,11-23 * * *'
   workflow_dispatch:
 
 permissions:
