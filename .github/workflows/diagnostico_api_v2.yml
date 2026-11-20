@@ -1,0 +1,26 @@
+name: FARO - Diagnóstico API v2 (solo lectura)
+on:
+  pull_request:
+    paths:
+      - diagnostico_api_v2.py
+      - .github/workflows/diagnostico_api_v2.yml
+permissions:
+  contents: read
+jobs:
+  api_diagnostic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar sintaxis
+        run: python -m py_compile diagnostico_api_v2.py
+      - name: Probar API con ticket sin guardar registros
+        env:
+          CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
+          PYTHONUNBUFFERED: '1'
+        run: |
+          test -n "$CHILECOMPRA_TICKET" || { echo "::error::Ticket no disponible"; exit 1; }
+          python diagnostico_api_v2.py
