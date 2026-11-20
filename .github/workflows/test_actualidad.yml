@@ -19,3 +19,11 @@ jobs:
           python-version: '3.12'
       - run: python -m py_compile monitor_supabase.py
       - run: python -m unittest -v test_actualidad.py test_recuperacion_atrasos.py test_horario_faro.py test_paginacion.py
+      - name: Diagnóstico API v2 temporal (solo PR diagnóstico)
+        if: github.event.pull_request.head.ref == 'diagnostic/compra-agil-20261120'
+        env:
+          CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
+          PYTHONUNBUFFERED: '1'
+        run: |
+          test -n "$CHILECOMPRA_TICKET" || { echo "::error::Ticket no disponible"; exit 1; }
+          python diagnostico_api_v2.py
