@@ -17,9 +17,8 @@ API_URL = "https://api2.mercadopublico.cl/v2/compra-agil"
 SOURCE = "compra_agil_v2"
 RECENT_CURSOR = "compra_agil_v2_reciente"
 RECENT_LOOKBACK = timedelta(minutes=90)
-# Cohorte de prueba: 30 fechas locales, del 20-nov 18:51 al 19-dic inclusive.
+# Cohorte permanente: compras publicadas desde la hora de inicio en Chile.
 PILOT_START = datetime(2026, 11, 20, 18, 51, tzinfo=ZoneInfo("America/Santiago"))
-PILOT_END = datetime(2026, 12, 20, 0, 0, tzinfo=ZoneInfo("America/Santiago"))
 OVERLAP = timedelta(minutes=20)
 WINDOW = timedelta(hours=1)
 MAX_PAGES = 30
@@ -228,7 +227,7 @@ def api_publication_local(item):
 
 def pertenece_piloto(item):
     publicada = api_publication_local(item)
-    return PILOT_START <= publicada < PILOT_END
+    return publicada >= PILOT_START
 
 
 def as_text(value):
@@ -343,12 +342,9 @@ def monitor_actualidad(db, ticket, now):
     if now < PILOT_START.astimezone(timezone.utc):
         print("Piloto FARO: aún no comienza; sin consultas.", flush=True)
         return 0
-    if now >= PILOT_END.astimezone(timezone.utc):
-        print("Piloto FARO: período de 30 días finalizado; sin consultas.", flush=True)
-        return 0
     desde = max(now - RECENT_LOOKBACK, PILOT_START.astimezone(timezone.utc))
     hasta = now
-    print(f"FARO piloto 30 días: {iso(desde)} → {iso(hasta)}", flush=True)
+    print(f"FARO piloto continuo: {iso(desde)} → {iso(hasta)}", flush=True)
     # Consultas independientes: un proceso nuevo no siempre figura en
     # una búsqueda exclusivamente basada en fecha de última modificación.
     # La API v2 interpreta 'Z' como hora de pared Chile en los filtros.
@@ -362,7 +358,7 @@ def monitor_actualidad(db, ticket, now):
     unique = {}
     fuera_periodo = 0
     for item in publicaciones + cambios:
-        # Solo procesos publicados durante el piloto; modificaciones de
+        # Solo procesos publicados desde el inicio; modificaciones de
         # compras anteriores no entran aunque hayan cambiado hoy.
         if not pertenece_piloto(item):
             fuera_periodo += 1
