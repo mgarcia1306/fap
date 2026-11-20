@@ -44,6 +44,18 @@ def horario_operativo(moment):
     return False
 
 
+def api_wallclock_chile_as_utc(dt):
+    """Compatibilidad API v2: interpreta filtros Z como hora de pared Chile.
+
+    En la API real (2026-11-20) ventanas UTC genuinas retornan cero,
+    mientras los mismos filtros con hora local Chile y sufijo Z retornan
+    registros. Esta adaptación afecta SOLO las consultas del monitor
+    reciente; el cursor persistido sigue usando UTC real.
+    """
+    local = dt.astimezone(CHILE_TZ)
+    return local.replace(tzinfo=timezone.utc)
+
+
 def iso(dt):
     return dt.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
@@ -311,8 +323,14 @@ def monitor_actualidad(db, ticket, now):
     print(f"FARO actualidad: {iso(desde)} → {iso(hasta)}", flush=True)
     # Consultas independientes: un proceso nuevo no siempre figura en
     # una búsqueda exclusivamente basada en fecha de última modificación.
-    publicaciones = fetch_publications(ticket, desde, hasta)
-    cambios = fetch_changes(ticket, desde, hasta)
+    # La API v2 interpreta 'Z' como hora de pared Chile en los filtros.
+    # No modificar 'desde'/'hasta': el cursor persiste en UTC genuino.
+    desde_api = api_wallclock_chile_as_utc(desde)
+    hasta_api = api_wallclock_chile_as_utc(hasta)
+    print(f"Ventana API (hora Chile expresada en Z): "
+          f"{iso(desde_api)} → {iso(hasta_api)}", flush=True)
+    publicaciones = fetch_publications(ticket, desde_api, hasta_api)
+    cambios = fetch_changes(ticket, desde_api, hasta_api)
     unique = {}
     for item in publicaciones + cambios:
         record, digest = normalize(item)
