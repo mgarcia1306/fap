@@ -81,6 +81,19 @@ def main():
         "publicado_hasta": chile_now.isoformat(), "tamano_pagina": 10, "numero_pagina": 1})
     probe("cambios_90m_offset_chile", {"cambio_desde": chile_since.isoformat(),
         "cambio_hasta": chile_now.isoformat(), "tamano_pagina": 10, "numero_pagina": 1})
+    probe("codigo_en_publicaciones_hora_chile", {"id": CODE,
+        "publicado_desde": local_z(chile_since), "publicado_hasta": local_z(chile_now),
+        "tamano_pagina": 10, "numero_pagina": 1})
+    probe("codigo_en_publicaciones_utc", {"id": CODE,
+        "publicado_desde": iso(NOW-timedelta(minutes=90)), "publicado_hasta": iso(NOW),
+        "tamano_pagina": 10, "numero_pagina": 1})
+    probe("codigo_en_cambios_hora_chile", {"id": CODE,
+        "cambio_desde": local_z(chile_since), "cambio_hasta": local_z(chile_now),
+        "tamano_pagina": 10, "numero_pagina": 1})
+    probe("publicaciones_90m_chile_pagina50", {"publicado_desde": local_z(chile_since),
+        "publicado_hasta": local_z(chile_now), "tamano_pagina": 50, "numero_pagina": 1})
+    probe("cambios_90m_chile_pagina50", {"cambio_desde": local_z(chile_since),
+        "cambio_hasta": local_z(chile_now), "tamano_pagina": 50, "numero_pagina": 1})
     print("Fin diagnóstico, sin escrituras.", flush=True)
 
 if __name__ == "__main__":
