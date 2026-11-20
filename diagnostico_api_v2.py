@@ -10,6 +10,7 @@ from datetime import datetime, timedelta, timezone
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 ROOT = "https://api2.mercadopublico.cl/v2/compra-agil"
 CODE = "3891-290-COT26"
@@ -68,6 +69,18 @@ def main():
     probe("cambios_3h", {"cambio_desde": iso(NOW-timedelta(hours=3)),
         "cambio_hasta": iso(NOW), "tamano_pagina": 10, "numero_pagina": 1})
     probe("ttl_4h", {"ttl_cambio_ms": 14400000, "tamano_pagina": 10, "numero_pagina": 1})
+    chile_now = NOW.astimezone(ZoneInfo("America/Santiago"))
+    chile_since = chile_now - timedelta(minutes=90)
+    # Detecta si backend interpreta ISO con Z como hora local pese a declarar UTC.
+    local_z = lambda dt: dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+    probe("publicaciones_90m_hora_chile_como_Z", {"publicado_desde": local_z(chile_since),
+        "publicado_hasta": local_z(chile_now), "tamano_pagina": 10, "numero_pagina": 1})
+    probe("cambios_90m_hora_chile_como_Z", {"cambio_desde": local_z(chile_since),
+        "cambio_hasta": local_z(chile_now), "tamano_pagina": 10, "numero_pagina": 1})
+    probe("publicaciones_90m_offset_chile", {"publicado_desde": chile_since.isoformat(),
+        "publicado_hasta": chile_now.isoformat(), "tamano_pagina": 10, "numero_pagina": 1})
+    probe("cambios_90m_offset_chile", {"cambio_desde": chile_since.isoformat(),
+        "cambio_hasta": chile_now.isoformat(), "tamano_pagina": 10, "numero_pagina": 1})
     print("Fin diagnóstico, sin escrituras.", flush=True)
 
 if __name__ == "__main__":
