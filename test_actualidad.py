@@ -1,4 +1,7 @@
-"""El monitor de actualidad no avanza el cursor del recuperador histórico."""
+"""El monitor de actualidad no avanza el cursor del recuperador histórico.
+
+En PR de diagnóstico, el workflow ejecuta además pruebas HTTP de solo lectura.
+"""
 import unittest
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
