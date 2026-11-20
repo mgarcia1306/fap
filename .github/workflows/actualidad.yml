@@ -1,9 +1,8 @@
 name: FARO - Monitor de actualidad
 
+# Activado por Cloudflare Workers mediante GitHub workflow_dispatch.
+# El cron nativo se desactiva al habilitar el scheduler externo.
 on:
-  schedule:
-    # Minutos desplazados para evitar el congestionamiento del minuto 00.
-    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
 
 permissions:
