@@ -1,4 +1,4 @@
-"""Piloto FARO: sincroniza cambios de Compra Ágil v2 hacia Supabase.
+"""FARO: sincroniza publicaciones y cambios de Compra Ágil v2 hacia Supabase.
 Solo usa librería estándar. No envía correos ni modifica state.json.
 """
 import argparse
@@ -120,11 +120,18 @@ class TooManyPagesError(RuntimeError):
     """La API anuncia más páginas de las que aceptamos por solicitud."""
 
 
-def _fetch_pages(ticket, since, until):
+def _fetch_pages(ticket, since, until, filter_mode="cambios"):
     """Descarga todas las páginas de un subintervalo o falla sin datos parciales."""
     all_items = []
-    params = {"cambio_desde": iso(since), "cambio_hasta": iso(until),
-              "tamano_pagina": 50, "ordenar_por": "FechaUltimaModificacion"}
+    if filter_mode == "cambios":
+        period = {"cambio_desde": iso(since), "cambio_hasta": iso(until)}
+        order = "FechaUltimaModificacion"
+    elif filter_mode == "publicaciones":
+        period = {"publicado_desde": iso(since), "publicado_hasta": iso(until)}
+        order = "FechaPublicacion"
+    else:
+        raise ValueError(f"Filtro de consulta desconocido: {filter_mode}")
+    params = {**period, "tamano_pagina": 50, "ordenar_por": order}
     for page in range(1, MAX_PAGES + 1):
         params["numero_pagina"] = page
         response = http_json(API_URL + "?" + urlencode(params),
@@ -146,14 +153,16 @@ def _fetch_pages(ticket, since, until):
     raise RuntimeError("Paginación incompleta")
 
 
-def fetch_changes(ticket, since, until, depth=0):
+def fetch_changes(ticket, since, until, depth=0, filter_mode="cambios"):
     """Reduce intervalos saturados sin omitir páginas ni adelantar cursores.
 
     Ambos lados incluyen el punto medio para proteger eventos en el límite.
     Los resultados idénticos de esa frontera se deduplican por contenido.
     """
     try:
-        return _fetch_pages(ticket, since, until)
+        if filter_mode == "cambios":
+            return _fetch_pages(ticket, since, until)
+        return _fetch_pages(ticket, since, until, filter_mode=filter_mode)
     except TooManyPagesError as exc:
         span = until - since
         if depth >= MAX_SPLIT_DEPTH or span <= MIN_SPLIT_WINDOW:
@@ -170,8 +179,8 @@ def fetch_changes(ticket, since, until, depth=0):
         print(f"Intervalo saturado ({exc}). Dividiendo "
               f"{iso(since)} → {iso(midpoint)} → {iso(until)}",
               flush=True)
-        left = fetch_changes(ticket, since, midpoint, depth + 1)
-        right = fetch_changes(ticket, midpoint, until, depth + 1)
+        left = fetch_changes(ticket, since, midpoint, depth + 1, filter_mode)
+        right = fetch_changes(ticket, midpoint, until, depth + 1, filter_mode)
         merged = []
         seen = set()
         for item in left + right:
@@ -181,6 +190,11 @@ def fetch_changes(ticket, since, until, depth=0):
                 seen.add(fingerprint)
                 merged.append(item)
         return merged
+
+
+def fetch_publications(ticket, since, until):
+    """Consulta procesos por fecha de PUBLICACIÓN; no depende del último cambio."""
+    return fetch_changes(ticket, since, until, filter_mode="publicaciones")
 
 
 def as_text(value):
@@ -287,17 +301,20 @@ def recover_backlog(db, ticket, now, max_chunks=MAX_CHUNKS_PER_RUN,
 
 
 def monitor_actualidad(db, ticket, now):
-    """Consulta los cambios recientes sin depender del cursor histórico.
+    """Consulta tanto publicaciones recientes como modificaciones recientes.
 
-    El recuperador histórico cubre eventuales huecos si GitHub omite un cron.
+    Ambos listados se unen por código, conservando la versión más actual.
+    El cursor reciente solo avanza tras completar ambas consultas y la escritura.
     """
     desde = now - RECENT_LOOKBACK
     hasta = now
     print(f"FARO actualidad: {iso(desde)} → {iso(hasta)}", flush=True)
-    # No usamos synchronize_window porque su cursor es el histórico.
-    entries = fetch_changes(ticket, desde, hasta)
+    # Consultas independientes: un proceso nuevo no siempre figura en
+    # una búsqueda exclusivamente basada en fecha de última modificación.
+    publicaciones = fetch_publications(ticket, desde, hasta)
+    cambios = fetch_changes(ticket, desde, hasta)
     unique = {}
-    for item in entries:
+    for item in publicaciones + cambios:
         record, digest = normalize(item)
         code = record["codigo"]
         old = unique.get(code)
@@ -313,7 +330,9 @@ def monitor_actualidad(db, ticket, now):
                     if record.get("fecha_publicacion")
                     and parse_dt(record["fecha_publicacion"]).astimezone(CHILE_TZ).date()
                     == now.astimezone(CHILE_TZ).date())
-    print(f"Actualidad OK: cambios={len(entries)}, oportunidades_distintas={len(unique)}, "
+    print(f"Actualidad OK: publicaciones_en_ventana={len(publicaciones)}, "
+          f"cambios_en_ventana={len(cambios)}, "
+          f"oportunidades_distintas={len(unique)}, "
           f"publicadas_hoy_en_ventana={nuevas_hoy}", flush=True)
     return len(unique)
 
