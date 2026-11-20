@@ -17,6 +17,9 @@ API_URL = "https://api2.mercadopublico.cl/v2/compra-agil"
 SOURCE = "compra_agil_v2"
 RECENT_CURSOR = "compra_agil_v2_reciente"
 RECENT_LOOKBACK = timedelta(minutes=90)
+# Cohorte de prueba: 30 fechas locales, del 20-nov 18:51 al 19-dic inclusive.
+PILOT_START = datetime(2026, 11, 20, 18, 51, tzinfo=ZoneInfo("America/Santiago"))
+PILOT_END = datetime(2026, 12, 20, 0, 0, tzinfo=ZoneInfo("America/Santiago"))
 OVERLAP = timedelta(minutes=20)
 WINDOW = timedelta(hours=1)
 MAX_PAGES = 30
@@ -209,6 +212,25 @@ def fetch_publications(ticket, since, until):
     return fetch_changes(ticket, since, until, filter_mode="publicaciones")
 
 
+def api_publication_local(item):
+    """Interpreta fechas de publicación como reloj de Chile según prueba v2.
+
+    La API devuelve campos sin zona y, ocasionalmente, sufijo Z para
+    horas que corresponden al reloj de Chile. No confiar en su offset.
+    """
+    fechas = item.get("fechas") or {}
+    raw = fechas.get("fecha_publicacion")
+    if not isinstance(raw, str) or not raw.strip():
+        raise ValueError(f"Compra {item.get('codigo')} sin fecha de publicación")
+    stamp = datetime.fromisoformat(raw.strip().replace("Z", "+00:00"))
+    return stamp.replace(tzinfo=None).replace(tzinfo=CHILE_TZ)
+
+
+def pertenece_piloto(item):
+    publicada = api_publication_local(item)
+    return PILOT_START <= publicada < PILOT_END
+
+
 def as_text(value):
     if isinstance(value, dict):
         return str(value.get("nombre") or value.get("descripcion") or value.get("codigo") or "")
@@ -318,9 +340,15 @@ def monitor_actualidad(db, ticket, now):
     Ambos listados se unen por código, conservando la versión más actual.
     El cursor reciente solo avanza tras completar ambas consultas y la escritura.
     """
-    desde = now - RECENT_LOOKBACK
+    if now < PILOT_START.astimezone(timezone.utc):
+        print("Piloto FARO: aún no comienza; sin consultas.", flush=True)
+        return 0
+    if now >= PILOT_END.astimezone(timezone.utc):
+        print("Piloto FARO: período de 30 días finalizado; sin consultas.", flush=True)
+        return 0
+    desde = max(now - RECENT_LOOKBACK, PILOT_START.astimezone(timezone.utc))
     hasta = now
-    print(f"FARO actualidad: {iso(desde)} → {iso(hasta)}", flush=True)
+    print(f"FARO piloto 30 días: {iso(desde)} → {iso(hasta)}", flush=True)
     # Consultas independientes: un proceso nuevo no siempre figura en
     # una búsqueda exclusivamente basada en fecha de última modificación.
     # La API v2 interpreta 'Z' como hora de pared Chile en los filtros.
@@ -332,7 +360,13 @@ def monitor_actualidad(db, ticket, now):
     publicaciones = fetch_publications(ticket, desde_api, hasta_api)
     cambios = fetch_changes(ticket, desde_api, hasta_api)
     unique = {}
+    fuera_periodo = 0
     for item in publicaciones + cambios:
+        # Solo procesos publicados durante el piloto; modificaciones de
+        # compras anteriores no entran aunque hayan cambiado hoy.
+        if not pertenece_piloto(item):
+            fuera_periodo += 1
+            continue
         record, digest = normalize(item)
         code = record["codigo"]
         old = unique.get(code)
@@ -351,6 +385,7 @@ def monitor_actualidad(db, ticket, now):
     print(f"Actualidad OK: publicaciones_en_ventana={len(publicaciones)}, "
           f"cambios_en_ventana={len(cambios)}, "
           f"oportunidades_distintas={len(unique)}, "
+          f"fuera_del_piloto={fuera_periodo}, "
           f"publicadas_hoy_en_ventana={nuevas_hoy}", flush=True)
     return len(unique)
 
