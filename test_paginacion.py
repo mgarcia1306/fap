@@ -5,7 +5,7 @@ from unittest.mock import patch
 from urllib.parse import parse_qs, urlsplit
 
 from monitor_supabase import (
-    fetch_changes, _fetch_pages, TooManyPagesError, MAX_PAGES,
+    fetch_changes, fetch_publications, _fetch_pages, TooManyPagesError, MAX_PAGES,
     synchronize_window,
 )
 
@@ -47,6 +47,46 @@ class PaginationTests(unittest.TestCase):
             items = _fetch_pages("ticket", START, END)
         self.assertEqual([x["codigo"] for x in items], ["1", "2", "3"])
         self.assertEqual(http.call_count, 3)
+
+    def test_publicaciones_usa_filtro_publicado_y_orden_publicacion(self):
+        requests = []
+        def response(url, headers):
+            query = parse_qs(urlsplit(url).query)
+            requests.append(query)
+            return {"success": "OK", "payload": {
+                "items": [{"codigo": "PUB-1-COT26"}],
+                "paginacion": {"total_paginas": 1},
+            }}
+        with patch("monitor_supabase.http_json", side_effect=response):
+            items = fetch_publications("ticket", START, END)
+        self.assertEqual(len(items), 1)
+        params = requests[0]
+        self.assertEqual(params["publicado_desde"], ["2026-11-16T09:00:00Z"])
+        self.assertEqual(params["publicado_hasta"], ["2026-11-16T10:00:00Z"])
+        self.assertEqual(params["ordenar_por"], ["FechaPublicacion"])
+        self.assertNotIn("cambio_desde", params)
+        self.assertNotIn("cambio_hasta", params)
+
+    def test_saturacion_en_publicaciones_subdivide_manteniendo_filtro(self):
+        requests = []
+        def response(url, headers):
+            q = parse_qs(urlsplit(url).query)
+            requests.append(q)
+            minutes = (datetime.fromisoformat(q["publicado_hasta"][0].replace("Z","+00:00"))
+                       - datetime.fromisoformat(q["publicado_desde"][0].replace("Z","+00:00"))).total_seconds() / 60
+            if minutes > 40:
+                pages, items = 36, []
+            else:
+                pages, items = 1, [{"codigo": q["publicado_desde"][0]}]
+            return {"success": "OK", "payload": {
+                "items": items, "paginacion": {"total_paginas": pages},
+            }}
+        with patch("monitor_supabase.http_json", side_effect=response):
+            result = fetch_publications("ticket", START, END)
+        self.assertEqual(len(result), 2)
+        self.assertEqual(len(requests), 3)
+        self.assertTrue(all("publicado_desde" in q and "cambio_desde" not in q
+                            for q in requests))
 
     def test_limite_detectado_antes_de_pedir_pagina_31(self):
         def response(url, headers):
