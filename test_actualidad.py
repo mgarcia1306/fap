@@ -3,7 +3,7 @@ import unittest
 from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 from monitor_supabase import (monitor_actualidad, RECENT_CURSOR,
-    api_wallclock_chile_as_utc, pertenece_piloto, PILOT_START)
+    api_wallclock_chile_as_utc, pertenece_piloto, PILOT_START, normalize)
 
 NOW = datetime(2026, 11, 20, 22, 30, tzinfo=timezone.utc)
 
@@ -25,6 +25,30 @@ class FakeDB:
         self.cursors.append((dt,count,fuente))
 
 class ActualidadTest(unittest.TestCase):
+    def test_estado_glosa_api_real(self):
+        item = compra("GLS-1-COT26", "2026-11-20T19:30:00Z",
+                      "2026-11-20 19:00")
+        item["estado"] = {"glosa": "Publicada", "codigo": "publicada", "id_estado": 2}
+        record, digest = normalize(item)
+        self.assertEqual(record["estado_nombre"], "Publicada")
+        self.assertEqual(record["estado_codigo"], "publicada")
+        self.assertEqual(record["datos_originales"]["estado"]["id_estado"], 2)
+        self.assertEqual(len(digest), 64)
+
+    def test_estado_nombre_compatibilidad(self):
+        item = compra("LEG-1-COT26", "2026-11-20T19:30:00Z",
+                      "2026-11-20 19:00")
+        self.assertEqual(normalize(item)[0]["estado_nombre"], "Publicada")
+        item["estado"] = {"codigo": 3, "descripcion": "Cerrada"}
+        self.assertEqual(normalize(item)[0]["estado_nombre"], "Cerrada")
+
+    def test_estado_glosa_prioridad(self):
+        item = compra("PRI-1-COT26", "2026-11-20T19:30:00Z",
+                      "2026-11-20 19:00")
+        item["estado"] = {"codigo": "publicada", "glosa": "Publicada",
+                          "nombre": "Valor anterior"}
+        self.assertEqual(normalize(item)[0]["estado_nombre"], "Publicada")
+
     def test_conversion_reloj_chile_verano_y_invierno(self):
         verano = datetime(2026, 11, 20, 21, 30, tzinfo=timezone.utc)
         invierno = datetime(2026, 7, 20, 21, 30, tzinfo=timezone.utc)
