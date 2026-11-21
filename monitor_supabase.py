@@ -255,7 +255,7 @@ def normalize(item):
         "titulo": item.get("nombre"), "descripcion": item.get("descripcion"),
         "organismo": as_text(buyer),
         "estado_codigo": as_text(state.get("codigo")),
-        "estado_nombre": as_text(state.get("nombre") or state.get("descripcion")),
+        "estado_nombre": as_text(state.get("glosa") or state.get("nombre") or state.get("descripcion")),
         "fecha_publicacion": dates.get("fecha_publicacion"),
         "fecha_cierre": dates.get("fecha_cierre"),
         "fecha_ultimo_cambio": dates["fecha_ultimo_cambio"],
