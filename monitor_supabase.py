@@ -75,7 +75,7 @@ def http_json(url, method="GET", headers=None, body=None):
                 raw = response.read()
                 return json.loads(raw) if raw else None
         except HTTPError as exc:
-            if exc.code not in (429, 500, 502, 503, 504) or attempt == MAX_ATTEMPTS - 1:
+            if exc.code not in (429, 500, 502, 503, 504, 522) or attempt == MAX_ATTEMPTS - 1:
                 detail = exc.read(250).decode("utf-8", errors="replace")
                 raise RuntimeError(f"HTTP {exc.code} en {url.split('?')[0]}: {detail}") from exc
             retry_after = exc.headers.get("Retry-After", "")
@@ -272,6 +272,21 @@ def normalize(item):
     return record, digest
 
 
+def guardar_oportunidad(db, code, record, digest):
+    """Persiste una compra; conserva el código en el error para diagnosticar fallos.
+
+    La RPC hace upsert por (fuente, codigo) y deduplica cambios por huella,
+    de modo que reintentar una solicitud con respuesta perdida es seguro.
+    """
+    try:
+        result = db.request("rpc/faro_guardar_oportunidad", method="POST",
+                            data={"p_registro": record, "p_huella": digest})
+    except Exception as exc:
+        raise RuntimeError(f"Fallo guardando oportunidad {code}: {exc}") from exc
+    if not isinstance(result, int) or result <= 0:
+        raise RuntimeError(f"No se confirmó el guardado de {code}")
+
+
 def synchronize_window(db, ticket, since, until):
     entries = fetch_changes(ticket, since, until)
     unique = {}
@@ -284,10 +299,7 @@ def synchronize_window(db, ticket, since, until):
     for code, (record, digest) in unique.items():
         # Una única transacción PostgreSQL guarda la oportunidad y el historial.
         # Una versión antigua nunca reemplaza una modificación más reciente.
-        result = db.request("rpc/faro_guardar_oportunidad", method="POST",
-                            data={"p_registro": record, "p_huella": digest})
-        if not isinstance(result, int) or result <= 0:
-            raise RuntimeError(f"No se confirmó el guardado de {code}")
+        guardar_oportunidad(db, code, record, digest)
     db.save_cursor(until, len(unique))
     return len(entries), len(unique)
 
@@ -369,10 +381,7 @@ def monitor_actualidad(db, ticket, now):
         if old is None or parse_dt(record["fecha_ultimo_cambio"]) >= parse_dt(old[0]["fecha_ultimo_cambio"]):
             unique[code] = (record, digest)
     for code, (record, digest) in unique.items():
-        result = db.request("rpc/faro_guardar_oportunidad", method="POST",
-                            data={"p_registro": record, "p_huella": digest})
-        if not isinstance(result, int) or result <= 0:
-            raise RuntimeError(f"Fallo persistencia de {code}")
+        guardar_oportunidad(db, code, record, digest)
     db.save_cursor(hasta, len(unique), fuente=RECENT_CURSOR)
     nuevas_hoy = sum(1 for record, _ in unique.values()
                     if record.get("fecha_publicacion")
