@@ -173,5 +173,70 @@ class ActualidadTest(unittest.TestCase):
         self.assertEqual(db.ingest, [])
 
 
+
+class PersistenciaRetryTests(unittest.TestCase):
+    """Pruebas aisladas: no consultan ChileCompra ni escriben en Supabase."""
+
+    @staticmethod
+    def error_http(code):
+        from io import BytesIO
+        from urllib.error import HTTPError
+        return HTTPError("https://ejemplo.test/rest/v1/rpc/faro_guardar_oportunidad",
+                         code, "simulado", {}, BytesIO(b"error simulado"))
+
+    def test_http_522_reintenta_y_recupera(self):
+        from unittest.mock import MagicMock
+        from monitor_supabase import http_json
+        respuesta = MagicMock()
+        respuesta.__enter__.return_value.read.return_value = b"123"
+        with patch("monitor_supabase.urlopen",
+                   side_effect=[self.error_http(522), respuesta]) as abrir, \
+             patch("monitor_supabase.time.sleep") as esperar:
+            self.assertEqual(http_json("https://ejemplo.test"), 123)
+        self.assertEqual(abrir.call_count, 2)
+        esperar.assert_called_once()
+
+    def test_http_522_agota_reintentos(self):
+        from monitor_supabase import http_json, MAX_ATTEMPTS
+        with patch("monitor_supabase.urlopen",
+                   side_effect=[self.error_http(522) for _ in range(MAX_ATTEMPTS)]) as abrir, \
+             patch("monitor_supabase.time.sleep") as esperar:
+            with self.assertRaisesRegex(RuntimeError, "HTTP 522"):
+                http_json("https://ejemplo.test")
+        self.assertEqual(abrir.call_count, MAX_ATTEMPTS)
+        self.assertEqual(esperar.call_count, MAX_ATTEMPTS - 1)
+
+    def test_http_400_no_reintenta(self):
+        from monitor_supabase import http_json
+        with patch("monitor_supabase.urlopen",
+                   side_effect=self.error_http(400)) as abrir, \
+             patch("monitor_supabase.time.sleep") as esperar:
+            with self.assertRaisesRegex(RuntimeError, "HTTP 400"):
+                http_json("https://ejemplo.test")
+        abrir.assert_called_once()
+        esperar.assert_not_called()
+
+    def test_error_de_guardado_identifica_codigo_y_no_avanza_cursor(self):
+        class FallaSegundaCompra(FakeDB):
+            def request(self, table, method="GET", data=None):
+                if data["p_registro"]["codigo"] == "FALLA-2-COT26":
+                    raise RuntimeError("HTTP 522 simulado")
+                return super().request(table, method=method, data=data)
+
+        db = FallaSegundaCompra()
+        items = [
+            compra("OK-1-COT26", "2026-11-20T19:30:00Z", "2026-11-20 19:00"),
+            compra("FALLA-2-COT26", "2026-11-20T19:31:00Z", "2026-11-20 19:00"),
+            compra("PEND-3-COT26", "2026-11-20T19:32:00Z", "2026-11-20 19:00"),
+        ]
+        with patch("monitor_supabase.fetch_publications", return_value=items), \
+             patch("monitor_supabase.fetch_changes", return_value=[]):
+            with self.assertRaisesRegex(RuntimeError, "FALLA-2-COT26.*HTTP 522"):
+                monitor_actualidad(db, "ticket", NOW)
+        self.assertEqual([x["p_registro"]["codigo"] for x in db.ingest],
+                         ["OK-1-COT26"])
+        self.assertEqual(db.cursors, [])
+
+
 if __name__=="__main__":
     unittest.main()
