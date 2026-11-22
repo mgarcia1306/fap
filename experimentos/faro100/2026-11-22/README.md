@@ -19,7 +19,7 @@
 ## Reproducibilidad
 La membresía **exacta** está congelada por `oportunidad_id` y `codigo` en el CSV. El SQL reproduce el algoritmo, pero en una base viva la actualización posterior de títulos podría cambiar la selección. Para recuperar las mismas compras, consultar por los 100 ID del CSV.
 
-Solo se exportaron datos del listado: no se consultó detalle ni se descargaron adjuntos. `documentos_en_listado` es el tamaño del arreglo JSON `documentos`, no un análisis de los archivos. No se asignaron etiquetas de relevancia ni rubros definitivos.
+En la selección original solo se exportaron datos del listado; posteriormente se recuperaron exitosamente los 100 detalles el 22-11-2026 en la ejecución de GitHub Actions #44987485178. Los adjuntos todavía no se han descargado. `documentos_en_listado` es el tamaño del arreglo JSON `documentos`, no un análisis de los archivos. No se asignaron etiquetas de relevancia ni rubros definitivos.
 
 ## Próxima fase
 1. Definir perfiles de proveedores multirrubro para evaluar relevancia.
@@ -30,7 +30,7 @@ Solo se exportaron datos del listado: no se consultó detalle ni se descargaron 
 Regla central: **no descartar una oportunidad solo por UNSPSC o título**.
 
 
-## Descarga de detalle (etapa preparada, aún no ejecutada contra ChileCompra)
+## Descarga de detalle (100/100 completados el 22-11-2026)
 - `descargar_detalles.py` lee exactamente los 100 códigos del manifiesto y hace **GET** a `/v2/compra-agil/{codigo}`, sin conectar con Supabase.
 - Reintentos para 429/500/502/503/504/522; cada código se guarda en `salida_detalles/<codigo>.json` con respuesta íntegra y hora de descarga.
 - Reanudable: no vuelve a consultar archivos existentes y válidos; registra fallos en `salida_detalles/resultado_descarga.json`. No descarga adjuntos.
@@ -50,15 +50,18 @@ python descargar_detalles.py --limit 100
 
 **No pegar el ticket en capturas, commits, logs o mensajes.** Si se ejecuta sin `CHILECOMPRA_TICKET`, el programa falla antes de solicitar la API. Los archivos `salida_detalles/` están ignorados por Git para evitar publicar respuestas sin revisión.
 
-La ejecución de las consultas autenticadas queda pendiente de disponer del ticket en el entorno donde se lance el script. El workflow de CI no usa secretos.
+La ejecución de los 100 detalles ya fue completada (100 descargados, 0 fallidos) y el artefacto histórico se encuentra en https://github.com/mgarcia1306/fap/actions/runs/44987485178. El workflow de CI no usa secretos.
 
 
-### Alternativa: ejecución manual en GitHub Actions (sin instalar nada)
-En esta **rama experimental únicamente**, `.github/workflows/diagnostico.yml` fue preparado para ejecutar el extractor con el secreto `CHILECOMPRA_TICKET` existente. El archivo homónimo de `main` sigue siendo el diagnóstico original.
+### Prueba manual de adjuntos del caso 4 en GitHub Actions
+
+Se adaptó el archivo local `test_descarga_adjuntos.py` como `descargar_adjuntos_faro100.py`. La prueba consulta **únicamente** los adjuntos de `3904-1092-COT26`, usando los endpoints públicos `/listar/{codigo}` y `/descargar/{uuid}`. No necesita ticket ni Supabase.
 
 1. Abrir **Actions → FARO - Diagnostico API → Run workflow**.
 2. En **Use workflow from**, seleccionar exactamente `experimento/faro-100-muestra-20261122` (no `main`).
-3. Ejecutar. Se prueban primero las funciones sin red; luego se consultan los 100 detalles mediante GET y se sube un artefacto `faro100-detalles-<run_id>` con retención de 7 días.
-4. Descargar el artefacto desde el resumen de la ejecución. Los datos **no** se suben a Supabase ni se agregan al repositorio.
+3. Ejecutar. Se instalan dependencias, corren pruebas sin red y se descargan los adjuntos de la compra de Bulnes.
+4. Descargar el artefacto `faro100-adjuntos-3904-1092-<run_id>` del resumen de ejecución; retención de 7 días.
 
-**Atención:** seleccionar `main` ejecutaría el diagnóstico habitual, **no** FARO-100. No ejecutar el workflow `FARO - Monitor de actualidad` para esta prueba. Si la API falla para un código, se registra el error y se continúa; el job termina con fallo si quedó algún detalle pendiente, pero el artefacto de los exitosos se conserva.
+**Importante:** el workflow de `main` sigue siendo el diagnóstico habitual. Esta variante de `diagnostico.yml` reemplaza temporalmente la descarga de detalles **solo en la rama experimental**; el script `descargar_detalles.py` se conserva. No se modifican monitores ni Supabase. Los PDF se excluyen de Git mediante `.gitignore`.
+
+El script limita la descarga a 20 archivos de 25 MiB como máximo cada uno, valida cabeceras PDF, registra errores y evita nombres peligrosos o duplicados. Se probaron sus funciones sin red antes de incorporarlo a GitHub.
