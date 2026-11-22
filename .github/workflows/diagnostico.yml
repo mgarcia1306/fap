@@ -1,4 +1,5 @@
-
+# Variante EXCLUSIVA de la rama experimental FARO-100.
+# En main este workflow conserva su diagnostico habitual.
 name: FARO - Diagnostico API
 
 on:
@@ -10,19 +11,32 @@ permissions:
 jobs:
   diagnostico:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
-
+    timeout-minutes: 18
     steps:
-      - name: Descargar repositorio
+      - name: Descargar rama seleccionada
         uses: actions/checkout@v4
-
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Probar API Compra Agil
+      - name: Pruebas de extractor (sin red)
+        working-directory: experimentos/faro100/2026-11-22
+        run: python -m unittest -v test_descargar_detalles.py
+      - name: Verificar ticket disponible
+        env:
+          CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
+        run: test -n "$CHILECOMPRA_TICKET"
+      - name: Descargar muestra FARO-100 en modo solo lectura
+        working-directory: experimentos/faro100/2026-11-22
         env:
           CHILECOMPRA_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
           PYTHONUNBUFFERED: '1'
-        run: python diagnostico.py
+        run: python descargar_detalles.py --limit 100 --pause 0.5
+      - name: Guardar resultados como artefacto (7 dias)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: faro100-detalles-${{ github.run_id }}
+          path: experimentos/faro100/2026-11-22/salida_detalles/
+          if-no-files-found: warn
+          retention-days: 7
