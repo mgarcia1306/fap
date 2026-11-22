@@ -1,6 +1,6 @@
 # FARO-100 · Piloto 15 compras, selección v1
 
-**Estado: 120 propuestas de IA añadidas al CSV existente el 22-11-2026; las 120 etiquetas humanas continúan VACÍAS y todavía NO hay resultados de los métodos A–D.**
+**Estado: 120 propuestas de IA añadidas al CSV existente el 22-11-2026; 1 etiqueta humana guiada registrada (caso 1/6), 119 pendientes y todavía NO hay resultados de los métodos A–D.**
 
 ## Objetivo y alcance
 - 15 compras **extraídas de la muestra congelada de 100**, sin nuevas consultas a Supabase.
@@ -59,3 +59,8 @@
 - Revisar primero seis pares con etiquetas posibles/insuficientes: `3145-615-COT26`/MANTENCION; `1075337-2243-COT26`/SALUD; `2771-694-COT26`/OFICINA y TEXTIL; `1211-117-COT26`/TECNOLOGIA; `5066-280-COT26`/OFICINA.
 - Validar también las tres confirmaciones: `1018-88-COT26`/CONSTRUCCION; `1057498-2745-COT26`/SALUD; `5067-2842-COT26`/TECNOLOGIA. Auditar una muestra de los 111 descartes, porque un error allí sería precisamente un falso negativo.
 - **No calcular todavía porcentajes de falsos negativos ni precisión de FARO**: faltan etiquetas independientes y salidas de métodos A–D.
+
+## Decisión conversacional 1/6 (22-11-2026)
+- `3145-615-COT26` / `MANTENCION` = `coincidencia_posible` según la usuaria, con razonamiento plomería/instalación y límite de capacidades reales.
+- Revisar el caso como **revisión guiada**: el control UI tenía preseleccionada esa misma etiqueta. Para una prueba verdaderamente ciega, la segunda revisión debería ocultar propuestas y etiquetas por defecto.
+- Códigos reportados por la usuaria: `721511`, `721515`, `7215`; no se validaron aquí. Códigos del producto observado: `30201603` y `40101825`.
