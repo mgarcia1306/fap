@@ -1,6 +1,6 @@
 # FARO-100 · Piloto 15 compras, selección v1
 
-**Estado: preparado para etiquetado independiente, todavía SIN etiquetas humanas ni resultados de los métodos A–D.**
+**Estado: 120 propuestas de IA añadidas al CSV existente el 22-11-2026; las 120 etiquetas humanas continúan VACÍAS y todavía NO hay resultados de los métodos A–D.**
 
 ## Objetivo y alcance
 - 15 compras **extraídas de la muestra congelada de 100**, sin nuevas consultas a Supabase.
@@ -50,3 +50,12 @@
 - No confundir pertinencia semántica con elegibilidad comercial, plazo, región o certificaciones.
 
 **Próximo hito:** revisar y auditar las 120 etiquetas; luego comparar A–D. No alterar la rama `main`, monitores ni Supabase.
+
+## Avance comprobado: preevaluación de IA (22-11-2026)
+- Se añadieron cinco columnas **al CSV existente** `piloto15_etiquetado.csv`: `propuesta_ia`, `fuente_propuesta_ia`, `fundamento_propuesta_ia`, `adjunto_pendiente_ia`, `estado_validacion_ia`.
+- Balance preliminar de **120 pares**: 3 `coincidencia_confirmada`, 4 `coincidencia_posible`, 2 `informacion_insuficiente`, 111 `no_relevante`. Son **propuestas de IA**, no etiquetas humanas, ni desempeño de los métodos A–D.
+- Las **120 celdas** `etiqueta_humana` se conservaron vacías, así como los campos originales de referencia humana y UNSPSC. No confundir una propuesta con verdad de referencia.
+- Fuente analizada: 15 respuestas reales en el ZIP del run `44987485178` (título, descripción, productos); para `3904-1092-COT26` se reutilizó el PDF `OP26-1628.pdf` revisado anteriormente. **No se descargaron más adjuntos**.
+- Revisar primero seis pares con etiquetas posibles/insuficientes: `3145-615-COT26`/MANTENCION; `1075337-2243-COT26`/SALUD; `2771-694-COT26`/OFICINA y TEXTIL; `1211-117-COT26`/TECNOLOGIA; `5066-280-COT26`/OFICINA.
+- Validar también las tres confirmaciones: `1018-88-COT26`/CONSTRUCCION; `1057498-2745-COT26`/SALUD; `5067-2842-COT26`/TECNOLOGIA. Auditar una muestra de los 111 descartes, porque un error allí sería precisamente un falso negativo.
+- **No calcular todavía porcentajes de falsos negativos ni precisión de FARO**: faltan etiquetas independientes y salidas de métodos A–D.
