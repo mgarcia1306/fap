@@ -41,7 +41,7 @@
 - `protocolo_etiquetado.md`: criterios para evaluar pertinencia y comparar métodos A–D.
 - Detalles completos de **100/100** compras recuperados en [GitHub Actions #44987485178](https://github.com/mgarcia1306/fap/actions/runs/44987485178).
 - Descarga y lectura de **2/2 PDF** del caso Bulnes `3904-1092-COT26` en [GitHub Actions #44990431115](https://github.com/mgarcia1306/fap/actions/runs/44990431115). El título parecía pedir indumentaria, pero los PDF especifican protectores solares faciales, corporales y labiales.
-- `piloto15_seleccion.csv`, `piloto15_etiquetado.csv` y `piloto15_metodologia.md` ya existen en la rama experimental. La selección de 15 proviene de la muestra nueva. El 22-11-2026 se añadieron **120 propuestas de IA** en cinco columnas nuevas sin completar ni alterar **ninguna de las 120 etiquetas humanas**. **No abrir una tercera muestra ni duplicar planillas.**
+- `piloto15_seleccion.csv`, `piloto15_etiquetado.csv` y `piloto15_metodologia.md` ya existen en la rama experimental. La selección de 15 proviene de la muestra nueva. El 22-11-2026 se añadieron **120 propuestas de IA** en cinco columnas nuevas sin completar ninguna etiqueta humana en ese paso; **posteriormente, la usuaria asignó una etiqueta al caso 1/6**. **No abrir una tercera muestra ni duplicar planillas.**
 - El `README.md` de la carpeta conserva algunas frases históricas sobre descargas pendientes: interpretarlas según los hitos de ejecución confirmados arriba.
 
 **Cruce de códigos verificado el 2026-11-22:** los **88 códigos** con líneas de la auditoría original y los **100 códigos** de la muestra nueva tienen **0 coincidencias**. Los 12 casos originales sin líneas no están incluidos en el XLSX auditado; no se verificó su identidad aquí. No fusionar denominadores ni trasladar automáticamente etiquetas entre muestras.
@@ -76,7 +76,13 @@ Se revisaron los **10 códigos únicos** que aparecen en `FARO-100-revision-adju
 
 ## 6. Próxima acción concreta
 
-**Hito confirmado:** el primer cruce de las 12 líneas auditadas con adjuntos ya figura arriba. **Hito del piloto nuevo:** 120 pares revisados preliminarmente por IA (111 no relevantes, 4 posibles, 2 insuficientes, 3 confirmados), con etiqueta humana original preservada vacía. **Siguiente acción:** revisión humana independiente empezando por los 6 pares dudosos/insuficientes y 3 confirmados, y muestreo de descartes; consultar adjuntos que efectivamente podrían cambiar la decisión. Solo tras validación, comparar A–D. No crear una nueva plantilla.
+**Hito confirmado:** el primer cruce de las 12 líneas auditadas con adjuntos ya figura arriba. **Hito del piloto nuevo:** 120 pares revisados preliminarmente por IA (111 no relevantes, 4 posibles, 2 insuficientes, 3 confirmados), con **1 etiqueta humana registrada** (caso 1/6) y 119 restantes vacías. **Siguiente acción:** revisión humana independiente empezando por los 6 pares dudosos/insuficientes y 3 confirmados, y muestreo de descartes; consultar adjuntos que efectivamente podrían cambiar la decisión. Solo tras validación, comparar A–D. No crear una nueva plantilla.
 
 ---
 **Principio de continuidad:** revisar primero, reutilizar lo existente, ejecutar después. Una ejecución exitosa de GitHub Actions no equivale por sí sola a cobertura completa ni a precisión de clasificación validada.
+
+## 7. Validación conversacional guiada (22-11-2026)
+- **Caso 1/6 revisado:** `3145-615-COT26` / perfil `MANTENCION` = `coincidencia_posible`, decisión explícita de la usuaria; documentada en `piloto15_etiquetado.csv`. Considera servicios de plomería/instalación y la posible interacción con sistemas eléctricos en termos.
+- La usuaria citó rangos/familias UNSPSC `721511`, `721515` y `7215` a partir de su investigación (su correspondencia exacta **no fue verificada externamente** en este registro). Los códigos realmente presentes en el JSON fueron `30201603` (Cabañas) y `40101825` (Calentadores de agua de uso doméstico).
+- **Cautela metodológica:** la pregunta original traía `coincidencia_posible` preseleccionada; por tanto, esta decisión es una **revisión guiada, no ciega**. No tratar las seis decisiones guiadas como referencia independiente perfecta al evaluar métodos A–D; exigir una segunda revisión independiente si se necesita evaluación ciega.
+- **Progreso:** 1/120 etiquetas humanas rellenadas, 119 pendientes; la siguiente es `1075337-2243-COT26` / `SALUD` (descalcificador EDTA).
