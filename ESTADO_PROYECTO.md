@@ -55,16 +55,24 @@
 5. Medir falsos negativos, falsos positivos, abstenciones, esfuerzo y oportunidades únicas afectadas. Los 301 productos auditados no equivalen a 301 oportunidades ni a 301 pares compra-perfil.
 6. Validar métricas antes de conectar clasificación a alertas de clientes.
 
-## 5. Primer cruce semántico: observaciones preliminares, NO etiquetas finales
+## 5. Primer cruce semántico: 10 compras, 12 líneas con adjuntos (preliminar)
 
-Basado en el CSV de adjuntos ya revisados:
+Se revisaron los **10 códigos únicos** que aparecen en `FARO-100-revision-adjuntos.csv` (12 líneas) y se contrastaron con los ocho perfiles ya definidos. **Son candidatos de pertinencia, no etiquetas humanas finales ni métricas de falsos negativos**.
 
-- `2287-741-COT26`: marcadores, tijeras, papeles y cartulinas; **OFICINA** es candidato por útiles/papelería, pero verificar cobertura de todo el paquete.
-- `4455-357-COT26`: proyector, audio, televisor, notebook y licencia de Office, además de elementos de laboratorio; **TECNOLOGIA** es candidato para parte del pedido; no asumir que provee insumos de laboratorio.
-- `3152-314-COT26`: nylon para orilladora, calzado de seguridad, enchufes y cable eléctrico; posible cruce con **CONSTRUCCION**, sujeto a cobertura de todos los ítems.
-- `736812-99-COT26`: artistas y danza; **no aparece un perfil de producción artística** entre los ocho, y no debe forzarse coincidencia.
+| Compra | Candidato(s) de perfil | Motivo / límite |
+|---|---|---|
+| `1175-502-COT26` | SALUD **por verificar** | Maletines de atención domiciliaria; el perfil cubre insumos/equipamiento clínico básico, pero no declara expresamente bolsos de transporte. |
+| `1962-386-COT26` | Ninguno claro | Sillas de oficina; el perfil OFICINA actual incluye papelería y suministros, **no mobiliario**. |
+| `2287-741-COT26` | OFICINA | Marcadores, papeles y útiles; también hay materiales de manualidades, por lo que debe verificarse cobertura del conjunto. |
+| `2675-394-COT26` | Ninguno claro | Balizas y equipamiento para vehículos; no se definió proveedor de accesorios automotrices. |
+| `3152-314-COT26` | CONSTRUCCION **posible** | Insumos para mantención, enchufes, cable y otros; mezcla con calzado de seguridad y artículos fuera de catálogo. |
+| `3945-69-COT26` | ASEO **posible/parcial** | Jabón mecánico y paños de limpieza, junto con soldadura y acoples; no asumir suministro del paquete completo. |
+| `4455-357-COT26` | TECNOLOGIA | Proyector, televisor, notebook y Office; parte del pedido incluye materiales de laboratorio fuera del perfil. |
+| `5060-1131-COT26` | OFICINA **posible/parcial** | Carpetas, cuadernos y láminas, además de témperas y material de enseñanza. |
+| `557639-3693-COT26` | OFICINA **posible/parcial** | Tijeras, cartulinas y pegamento; mezcla de material didáctico. |
+| `736812-99-COT26` | Ninguno claro | Cantantes, grupos musicales y danza; no hay perfil de producción artística. |
 
-Estas observaciones son hipótesis de pertinencia, **no etiquetas humanas auditadas**. Para etiquetar se deben leer los detalles de cada compra y aplicar el protocolo.
+**Balance descriptivo:** 7 compras con al menos un perfil candidato, **3 sin perfil claro**. Este balance no mide rendimiento del algoritmo: todavía no se aplicó la matriz completa de etiquetas por par.
 
 ## 6. Próxima acción concreta
 
