@@ -1,0 +1,30 @@
+name: FARO-100 - Pruebas extractor aislado
+
+on:
+  push:
+    branches:
+      - experimento/faro-100-muestra-20261122
+    paths:
+      - 'experimentos/faro100/2026-11-22/**'
+      - '.github/workflows/test_faro100.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar sintaxis
+        run: python -m py_compile experimentos/faro100/2026-11-22/descargar_detalles.py experimentos/faro100/2026-11-22/test_descargar_detalles.py
+      - name: Pruebas sin red ni credenciales
+        working-directory: experimentos/faro100/2026-11-22
+        run: python -m unittest -v test_descargar_detalles.py
+      - name: Simulación sobre la muestra real
+        working-directory: experimentos/faro100/2026-11-22
+        run: python descargar_detalles.py --dry-run --limit 3
