@@ -20,11 +20,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - run: python -m pip install 'requests>=2.31,<3'
       - name: Comprobar sintaxis
-        run: python -m py_compile experimentos/faro100/2026-11-22/descargar_detalles.py experimentos/faro100/2026-11-22/test_descargar_detalles.py
+        run: python -m py_compile experimentos/faro100/2026-11-22/descargar_detalles.py experimentos/faro100/2026-11-22/descargar_adjuntos_faro100.py experimentos/faro100/2026-11-22/test_adjuntos_faro100.py
       - name: Pruebas sin red ni credenciales
         working-directory: experimentos/faro100/2026-11-22
-        run: python -m unittest -v test_descargar_detalles.py
+        run: python -m unittest -v test_descargar_detalles.py test_adjuntos_faro100.py
       - name: Simulación sobre la muestra real
         working-directory: experimentos/faro100/2026-11-22
         run: python descargar_detalles.py --dry-run --limit 3
