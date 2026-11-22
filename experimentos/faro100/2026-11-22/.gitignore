@@ -1,0 +1,4 @@
+salida_detalles/
+__pycache__/
+*.pyc
+.env
