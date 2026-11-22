@@ -41,7 +41,7 @@
 - `protocolo_etiquetado.md`: criterios para evaluar pertinencia y comparar métodos A–D.
 - Detalles completos de **100/100** compras recuperados en [GitHub Actions #44987485178](https://github.com/mgarcia1306/fap/actions/runs/44987485178).
 - Descarga y lectura de **2/2 PDF** del caso Bulnes `3904-1092-COT26` en [GitHub Actions #44990431115](https://github.com/mgarcia1306/fap/actions/runs/44990431115). El título parecía pedir indumentaria, pero los PDF especifican protectores solares faciales, corporales y labiales.
-- `piloto15_seleccion.csv`, `piloto15_etiquetado.csv` y `piloto15_metodologia.md` ya fueron creados en la rama experimental. El piloto de 15 es **una selección derivada de esta muestra nueva**, no una repetición literal demostrada de las 100 compras auditadas anteriormente. Sus 120 etiquetas siguen vacías. **No abrir una tercera muestra ni duplicar planillas.**
+- `piloto15_seleccion.csv`, `piloto15_etiquetado.csv` y `piloto15_metodologia.md` ya existen en la rama experimental. La selección de 15 proviene de la muestra nueva. El 22-11-2026 se añadieron **120 propuestas de IA** en cinco columnas nuevas sin completar ni alterar **ninguna de las 120 etiquetas humanas**. **No abrir una tercera muestra ni duplicar planillas.**
 - El `README.md` de la carpeta conserva algunas frases históricas sobre descargas pendientes: interpretarlas según los hitos de ejecución confirmados arriba.
 
 **Cruce de códigos verificado el 2026-11-22:** los **88 códigos** con líneas de la auditoría original y los **100 códigos** de la muestra nueva tienen **0 coincidencias**. Los 12 casos originales sin líneas no están incluidos en el XLSX auditado; no se verificó su identidad aquí. No fusionar denominadores ni trasladar automáticamente etiquetas entre muestras.
@@ -49,7 +49,7 @@
 ## 4. Qué falta realmente
 
 1. **Cruzar la auditoría previa con los 8 perfiles de proveedor**, sin confundir correspondencia UNSPSC con relevancia comercial. Partir por los casos de adjuntos ya resueltos; no volver a descargarlos.
-2. Etiquetar la pertinencia **por par compra-perfil** usando evidencia del producto/servicio y límites de catálogo: `coincidencia_confirmada`, `coincidencia_posible`, `informacion_insuficiente`, `no_relevante`. Registrar fundamento y qué parte de un paquete mixto cubre cada perfil.
+2. **Validar** las 120 propuestas de pertinencia por par compra-perfil —registradas el 22-11-2026, aún **NO** son etiquetas humanas— usando evidencia, límites de catálogo y revisión de casos dudosos. No compararlas como referencia oficial antes de validar.
 3. **Cruce parcial completado:** 0 coincidencias entre los 88 códigos auditados y los 100 de la nueva muestra. Si se recupera el manifiesto completo de la cohorte original (incluidos los 12 sin líneas), verificar también esos 12; no asumir identidad de cohortes.
 4. Ejecutar métodos A (solo UNSPSC), B (texto y productos), C (B + detección de conflicto UNSPSC), D (C + adjuntos selectivos) **sin mirar las etiquetas humanas**.
 5. Medir falsos negativos, falsos positivos, abstenciones, esfuerzo y oportunidades únicas afectadas. Los 301 productos auditados no equivalen a 301 oportunidades ni a 301 pares compra-perfil.
@@ -76,7 +76,7 @@ Se revisaron los **10 códigos únicos** que aparecen en `FARO-100-revision-adju
 
 ## 6. Próxima acción concreta
 
-Reutilizar `FARO-100-auditoria.xlsx` y `FARO-100-revision-adjuntos.csv` como evidencia ya revisada. Empezar por las 12 líneas con adjuntos, identificar los pares compra-perfil candidatos y contrastar el alcance real de los ocho perfiles. Documentar decisiones justificadas antes de comparar A–D. No crear archivos nuevos si puede ampliarse un registro existente.
+**Hito confirmado:** el primer cruce de las 12 líneas auditadas con adjuntos ya figura arriba. **Hito del piloto nuevo:** 120 pares revisados preliminarmente por IA (111 no relevantes, 4 posibles, 2 insuficientes, 3 confirmados), con etiqueta humana original preservada vacía. **Siguiente acción:** revisión humana independiente empezando por los 6 pares dudosos/insuficientes y 3 confirmados, y muestreo de descartes; consultar adjuntos que efectivamente podrían cambiar la decisión. Solo tras validación, comparar A–D. No crear una nueva plantilla.
 
 ---
 **Principio de continuidad:** revisar primero, reutilizar lo existente, ejecutar después. Una ejecución exitosa de GitHub Actions no equivale por sí sola a cobertura completa ni a precisión de clasificación validada.
