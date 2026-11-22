@@ -64,3 +64,9 @@
 - `3145-615-COT26` / `MANTENCION` = `coincidencia_posible` según la usuaria, con razonamiento plomería/instalación y límite de capacidades reales.
 - Revisar el caso como **revisión guiada**: el control UI tenía preseleccionada esa misma etiqueta. Para una prueba verdaderamente ciega, la segunda revisión debería ocultar propuestas y etiquetas por defecto.
 - Códigos reportados por la usuaria: `721511`, `721515`, `7215`; no se validaron aquí. Códigos del producto observado: `30201603` y `40101825`.
+
+## Decisión conversacional 2/6 (22-11-2026)
+- `1075337-2243-COT26` / `SALUD` = `coincidencia_posible`, elegida por usuaria en control sin opción preseleccionada.
+- Razonamiento: descalcificador EDTA para muestras de laboratorio no equivale a insumo clínico básico (mascarillas, guantes o jeringas), aunque en términos generales se relaciona con salud.
+- Ficha de especificaciones `592 DESCALCIFICADOR (1).docx` identificada, pero no revisada. El código UNSPSC observado `42181504` corresponde a Sets de hemacitometría y no define la relevancia.
+- 2/120 etiquetas humanas registradas; 118 pendientes. Próximo par `2771-694-COT26` / `OFICINA`.
