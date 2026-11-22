@@ -28,3 +28,26 @@ Solo se exportaron datos del listado: no se consultó detalle ni se descargaron 
 4. Medir falsos negativos, falsos positivos, incertidumbre, necesidad de adjuntos y costos/latencias.
 
 Regla central: **no descartar una oportunidad solo por UNSPSC o título**.
+
+
+## Descarga de detalle (etapa preparada, aún no ejecutada contra ChileCompra)
+- `descargar_detalles.py` lee exactamente los 100 códigos del manifiesto y hace **GET** a `/v2/compra-agil/{codigo}`, sin conectar con Supabase.
+- Reintentos para 429/500/502/503/504/522; cada código se guarda en `salida_detalles/<codigo>.json` con respuesta íntegra y hora de descarga.
+- Reanudable: no vuelve a consultar archivos existentes y válidos; registra fallos en `salida_detalles/resultado_descarga.json`. No descarga adjuntos.
+- `test_descargar_detalles.py` valida manifiesto, simulación, caché, continuidad tras fallos y validación de código sin red.
+- El workflow `test_faro100.yml` solo corre pruebas **sin ticket ni conexión** en la rama experimental.
+
+### Ejecución segura local
+Desde la carpeta `experimentos/faro100/2026-11-22`:
+
+```powershell
+python descargar_detalles.py --dry-run --limit 3
+# Configurar CHILECOMPRA_TICKET en una variable de entorno de sesión, no en el repositorio.
+python descargar_detalles.py --limit 3
+# Si las primeras tres respuestas son correctas, continuar:
+python descargar_detalles.py --limit 100
+```
+
+**No pegar el ticket en capturas, commits, logs o mensajes.** Si se ejecuta sin `CHILECOMPRA_TICKET`, el programa falla antes de solicitar la API. Los archivos `salida_detalles/` están ignorados por Git para evitar publicar respuestas sin revisión.
+
+La ejecución de las consultas autenticadas queda pendiente de disponer del ticket en el entorno donde se lance el script. El workflow de CI no usa secretos.
