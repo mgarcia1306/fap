@@ -44,13 +44,13 @@
 - `piloto15_seleccion.csv`, `piloto15_etiquetado.csv` y `piloto15_metodologia.md` ya fueron creados en la rama experimental. El piloto de 15 es **una selección derivada de esta muestra nueva**, no una repetición literal demostrada de las 100 compras auditadas anteriormente. Sus 120 etiquetas siguen vacías. **No abrir una tercera muestra ni duplicar planillas.**
 - El `README.md` de la carpeta conserva algunas frases históricas sobre descargas pendientes: interpretarlas según los hitos de ejecución confirmados arriba.
 
-**Precaución:** la auditoría anterior y la muestra nueva se originaron en selecciones diferentes; no fusionar sus denominadores ni trasladar automáticamente etiquetas entre compras. Si un código aparece en ambos conjuntos, reutilizar la evidencia por código y registrar procedencia.
+**Cruce de códigos verificado el 2026-11-22:** los **88 códigos** con líneas de la auditoría original y los **100 códigos** de la muestra nueva tienen **0 coincidencias**. Los 12 casos originales sin líneas no están incluidos en el XLSX auditado; no se verificó su identidad aquí. No fusionar denominadores ni trasladar automáticamente etiquetas entre muestras.
 
 ## 4. Qué falta realmente
 
 1. **Cruzar la auditoría previa con los 8 perfiles de proveedor**, sin confundir correspondencia UNSPSC con relevancia comercial. Partir por los casos de adjuntos ya resueltos; no volver a descargarlos.
 2. Etiquetar la pertinencia **por par compra-perfil** usando evidencia del producto/servicio y límites de catálogo: `coincidencia_confirmada`, `coincidencia_posible`, `informacion_insuficiente`, `no_relevante`. Registrar fundamento y qué parte de un paquete mixto cubre cada perfil.
-3. Verificar si las 100 compras de ambas selecciones se solapan por código y **reutilizar** las etiquetas documentales en las coincidentes; no asumir identidad de cohortes.
+3. **Cruce parcial completado:** 0 coincidencias entre los 88 códigos auditados y los 100 de la nueva muestra. Si se recupera el manifiesto completo de la cohorte original (incluidos los 12 sin líneas), verificar también esos 12; no asumir identidad de cohortes.
 4. Ejecutar métodos A (solo UNSPSC), B (texto y productos), C (B + detección de conflicto UNSPSC), D (C + adjuntos selectivos) **sin mirar las etiquetas humanas**.
 5. Medir falsos negativos, falsos positivos, abstenciones, esfuerzo y oportunidades únicas afectadas. Los 301 productos auditados no equivalen a 301 oportunidades ni a 301 pares compra-perfil.
 6. Validar métricas antes de conectar clasificación a alertas de clientes.
