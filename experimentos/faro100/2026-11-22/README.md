@@ -51,3 +51,14 @@ python descargar_detalles.py --limit 100
 **No pegar el ticket en capturas, commits, logs o mensajes.** Si se ejecuta sin `CHILECOMPRA_TICKET`, el programa falla antes de solicitar la API. Los archivos `salida_detalles/` están ignorados por Git para evitar publicar respuestas sin revisión.
 
 La ejecución de las consultas autenticadas queda pendiente de disponer del ticket en el entorno donde se lance el script. El workflow de CI no usa secretos.
+
+
+### Alternativa: ejecución manual en GitHub Actions (sin instalar nada)
+En esta **rama experimental únicamente**, `.github/workflows/diagnostico.yml` fue preparado para ejecutar el extractor con el secreto `CHILECOMPRA_TICKET` existente. El archivo homónimo de `main` sigue siendo el diagnóstico original.
+
+1. Abrir **Actions → FARO - Diagnostico API → Run workflow**.
+2. En **Use workflow from**, seleccionar exactamente `experimento/faro-100-muestra-20261122` (no `main`).
+3. Ejecutar. Se prueban primero las funciones sin red; luego se consultan los 100 detalles mediante GET y se sube un artefacto `faro100-detalles-<run_id>` con retención de 7 días.
+4. Descargar el artefacto desde el resumen de la ejecución. Los datos **no** se suben a Supabase ni se agregan al repositorio.
+
+**Atención:** seleccionar `main` ejecutaría el diagnóstico habitual, **no** FARO-100. No ejecutar el workflow `FARO - Monitor de actualidad` para esta prueba. Si la API falla para un código, se registra el error y se continúa; el job termina con fallo si quedó algún detalle pendiente, pero el artefacto de los exitosos se conserva.
