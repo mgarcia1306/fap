@@ -76,7 +76,7 @@ Se revisaron los **10 códigos únicos** que aparecen en `FARO-100-revision-adju
 
 ## 6. Próxima acción concreta
 
-**Hito confirmado:** el primer cruce de las 12 líneas auditadas con adjuntos ya figura arriba. **Hito del piloto nuevo:** 120 pares revisados preliminarmente por IA (111 no relevantes, 4 posibles, 2 insuficientes, 3 confirmados), con **1 etiqueta humana registrada** (caso 1/6) y 119 restantes vacías. **Siguiente acción:** revisión humana independiente empezando por los 6 pares dudosos/insuficientes y 3 confirmados, y muestreo de descartes; consultar adjuntos que efectivamente podrían cambiar la decisión. Solo tras validación, comparar A–D. No crear una nueva plantilla.
+**Hito confirmado:** el primer cruce de las 12 líneas auditadas con adjuntos ya figura arriba. **Hito del piloto nuevo:** 120 pares revisados preliminarmente por IA (111 no relevantes, 4 posibles, 2 insuficientes, 3 confirmados), con **2 etiquetas humanas registradas** (casos 1 y 2/6) y 118 restantes vacías. **Siguiente acción:** revisión humana independiente empezando por los 6 pares dudosos/insuficientes y 3 confirmados, y muestreo de descartes; consultar adjuntos que efectivamente podrían cambiar la decisión. Solo tras validación, comparar A–D. No crear una nueva plantilla.
 
 ---
 **Principio de continuidad:** revisar primero, reutilizar lo existente, ejecutar después. Una ejecución exitosa de GitHub Actions no equivale por sí sola a cobertura completa ni a precisión de clasificación validada.
@@ -85,4 +85,5 @@ Se revisaron los **10 códigos únicos** que aparecen en `FARO-100-revision-adju
 - **Caso 1/6 revisado:** `3145-615-COT26` / perfil `MANTENCION` = `coincidencia_posible`, decisión explícita de la usuaria; documentada en `piloto15_etiquetado.csv`. Considera servicios de plomería/instalación y la posible interacción con sistemas eléctricos en termos.
 - La usuaria citó rangos/familias UNSPSC `721511`, `721515` y `7215` a partir de su investigación (su correspondencia exacta **no fue verificada externamente** en este registro). Los códigos realmente presentes en el JSON fueron `30201603` (Cabañas) y `40101825` (Calentadores de agua de uso doméstico).
 - **Cautela metodológica:** la pregunta original traía `coincidencia_posible` preseleccionada; por tanto, esta decisión es una **revisión guiada, no ciega**. No tratar las seis decisiones guiadas como referencia independiente perfecta al evaluar métodos A–D; exigir una segunda revisión independiente si se necesita evaluación ciega.
-- **Progreso:** 1/120 etiquetas humanas rellenadas, 119 pendientes; la siguiente es `1075337-2243-COT26` / `SALUD` (descalcificador EDTA).
+- **Caso 2/6 revisado:** `1075337-2243-COT26` / `SALUD` = `coincidencia_posible`, porque un producto especializado de laboratorio puede exceder el catálogo de insumos clínicos básicos. Ficha `592 DESCALCIFICADOR (1).docx` pendiente de revisar. Control de opción sin etiqueta preseleccionada.
+- **Progreso:** 2/120 etiquetas humanas rellenadas, 118 pendientes; la siguiente es `2771-694-COT26` / `OFICINA` (publicidad/difusión).
