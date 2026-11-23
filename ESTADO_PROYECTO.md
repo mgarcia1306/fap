@@ -76,7 +76,7 @@ Se revisaron los **10 códigos únicos** que aparecen en `FARO-100-revision-adju
 
 ## 6. Próxima acción concreta
 
-**Hito confirmado:** el primer cruce de las 12 líneas auditadas con adjuntos ya figura arriba. **Hito del piloto nuevo:** 120 pares revisados preliminarmente por IA (111 no relevantes, 4 posibles, 2 insuficientes, 3 confirmados), con **3 etiquetas humanas registradas** (casos 1 a 3/6) y 117 restantes vacías. **Siguiente acción:** revisión humana independiente empezando por los 6 pares dudosos/insuficientes y 3 confirmados, y muestreo de descartes; consultar adjuntos que efectivamente podrían cambiar la decisión. Solo tras validación, comparar A–D. No crear una nueva plantilla.
+**Hito confirmado:** el primer cruce de las 12 líneas auditadas con adjuntos ya figura arriba. **Hito del piloto nuevo:** 120 pares revisados preliminarmente por IA (111 no relevantes, 4 posibles, 2 insuficientes, 3 confirmados), con **4 etiquetas humanas registradas** (casos 1 a 4/6) y 116 restantes vacías. **Siguiente acción:** revisión humana independiente empezando por los 6 pares dudosos/insuficientes y 3 confirmados, y muestreo de descartes; consultar adjuntos que efectivamente podrían cambiar la decisión. Solo tras validación, comparar A–D. No crear una nueva plantilla.
 
 ---
 **Principio de continuidad:** revisar primero, reutilizar lo existente, ejecutar después. Una ejecución exitosa de GitHub Actions no equivale por sí sola a cobertura completa ni a precisión de clasificación validada.
@@ -88,11 +88,18 @@ Se revisaron los **10 códigos únicos** que aparecen en `FARO-100-revision-adju
 - **Caso 2/6 revisado:** `1075337-2243-COT26` / `SALUD` = `coincidencia_posible`, porque un producto especializado de laboratorio puede exceder el catálogo de insumos clínicos básicos. Ficha `592 DESCALCIFICADOR (1).docx` pendiente de revisar. Control de opción sin etiqueta preseleccionada.
 - **Caso 3/6 revisado:** `2771-694-COT26` / `OFICINA` = `informacion_insuficiente`, decisión explícita de la usuaria: publicidad puede exigir impresión especializada (pendones, gigantografías) y el proveedor de insumos de oficina no necesariamente dispone de ella; podría tercerizar, capacidad no definida. Requerimientos en adjunto por revisar.
 - **Idea de producto (NO implementada):** valorar un bloque secundario de alertas para rubros afines o servicios especializados y preguntar al cliente si puede/acepta subcontratar. Mantener perfiles y correos existentes sin cambios hasta definir alcance y probarlo.
-- **Progreso:** 3/120 etiquetas humanas rellenadas, 117 pendientes; la siguiente es la misma compra `2771-694-COT26` / `TEXTIL`.
+- **Progreso histórico (antes de leer adjunto):** 3/120 etiquetas humanas rellenadas. La decisión de TEXTIL se registra en el hito posterior de la sección 9.
 
 ## 8. Adjunto incorporado al caso 4/6 (22-11-2026)
 - **Archivo aportado:** `ESPECIFICACIONES TÉCNICAS.pdf`, seis páginas, compra `2771-694-COT26`; revisados listados de pp. 1 y 2 y cláusula de integridad de la oferta en p. 3.
 - **Hallazgo semántico:** existen 2 manteles corporativos, 1.600 bolsas TNT en dos formatos y 100 mochilas tipo morral personalizadas, además de 300 libretas ecológicas, 1.200 imanes, 1.000 chapitas, 1 stand, 235 botellas y 5.000 dípticos. **Sí hay artículos de interés para TEXTIL y OFICINA, pero la compra es multirrubro.**
 - **Condición esencial:** la cláusula 3.2 exige cotizar el **100 %** de las partidas mínimas; no basta con ofrecer solo textiles o solo impresos. No existe evidencia en este documento de que se acepten propuestas parciales. Facturas separadas por lineamiento no prueban adjudicación separada.
-- **Registro:** evidencia añadida a `piloto15_etiquetado.csv` en columnas **posteriores**, preservando las 120 propuestas originales y las 3 decisiones humanas ya registradas. **Caso TEXTIL sin etiqueta humana aún**. Caso OFICINA conserva `informacion_insuficiente` hasta que la usuaria lo reconsidere con la nueva evidencia.
+- **Registro:** evidencia añadida a `piloto15_etiquetado.csv` en columnas **posteriores**, preservando las 120 propuestas originales y las 3 decisiones humanas ya registradas. **Caso TEXTIL etiquetado posteriormente por la usuaria como `coincidencia_posible`**. Caso OFICINA conserva `informacion_insuficiente` hasta que la usuaria lo reconsidere con la nueva evidencia.
 - **Siguiente pregunta:** revisar con la usuaria el caso 4/6 `2771-694-COT26`/`TEXTIL`, considerando pertinencia parcial frente a obligación de cobertura integral y posibilidad de tercerización no acreditada.
+
+## 9. Decisión conversacional 4/6 (22-11-2026)
+- **Compra:** `2771-694-COT26`, perfil `TEXTIL` = `coincidencia_posible`, elegida expresamente por la usuaria después de revisar el PDF de especificaciones.
+- **Justificación:** manteles, 1.600 bolsas TNT y 100 mochilas morral personalizados tienen afinidad textil/promocional, pero libretas, chapitas, imanes, stand, botellas y dípticos podrían exceder el catálogo. La tercerización es una posibilidad comercial por verificar, no capacidad demostrada.
+- **Limitación determinante:** §3.2, p.3, exige cotizar el 100% de las partidas de la compra; afinidad parcial **no** implica admisibilidad de una oferta parcial.
+- Registrados evidencia, fundamento y referencia del adjunto en `piloto15_etiquetado.csv`, sin alterar la propuesta original de IA. **Progreso: 4/120 etiquetas humanas registradas, 116 pendientes**.
+- **Siguiente caso 5/6:** `1211-117-COT26` / `TECNOLOGIA`. La revisión de `OFICINA` sobre la compra de Chiguayante continúa con etiqueta anterior hasta que la usuaria decida si la modifica.
