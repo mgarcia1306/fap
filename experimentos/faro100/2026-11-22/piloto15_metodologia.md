@@ -83,3 +83,8 @@
 - El requerimiento exige oferta total (100% de partidas) y se factura en tres lineamientos; esto no equivale a permitir postulación parcial.
 - Preservar la `propuesta_ia` original, construida sin leer este documento, para medir el aporte de adjuntos sin fuga de información. Evidencia posterior separada en columnas de trazabilidad del CSV.
 - No alterar sin revisión explícita de la usuaria las etiquetas humanas ya asignadas; `OFICINA` requiere posible reconsideración y `TEXTIL` permanece pendiente.
+
+## Decisión conversacional 4/6 (22-11-2026)
+- `2771-694-COT26` / `TEXTIL`: `coincidencia_posible`, asignada por la usuaria **después** de leer `ESPECIFICACIONES TÉCNICAS.pdf`, pp.1-3.
+- Fundamento: productos textiles promocionales entre muchas partidas no textiles; podría ser de interés si existe tercerización, pero **debe ofertarse el 100%** del paquete (p.3 §3.2). No extrapolar elegibilidad, y mantener separadas propuesta IA previa, prueba documental posterior y etiqueta humana.
+- 4/120 etiquetas humanas registradas, 116 pendientes. Caso 5/6: `1211-117-COT26` / `TECNOLOGIA`.
