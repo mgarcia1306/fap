@@ -76,3 +76,10 @@
 - Motivo: rubro de insumos de oficina no confirma equipamiento de impresión para publicidad (pendones/gigantografías); faltan productos exactos en `ESPECIFICACIONES TÉCNICAS.pdf`. La tercerización podría habilitar este trabajo, pero no está definida como capacidad del perfil.
 - Propuesta para futuro, **no implementar aún**: apartado de compras de interés potencial por rubros afines / servicios especializados y pregunta opcional sobre tercerización en la ficha del cliente. Evitar contaminar las capacidades congeladas del experimento.
 - 3/120 etiquetas humanas registradas; siguiente `2771-694-COT26` / `TEXTIL`.
+
+## Adjunto de Chiguayante leído después de decisiones iniciales (22-11-2026)
+- Archivo externo aportado por la usuaria: `ESPECIFICACIONES TÉCNICAS.pdf`, 6 páginas, pp. 1-2 listado y p. 3 §3.2 integralidad.
+- Comprobado: 2 manteles corporativos impresos, 1.600 bolsas TNT serigrafiadas y 100 morrales impresos, **más** 300 libretas, 1.200 imanes, 1.000 chapitas, 1 stand, 235 botellas deportivas y 5.000 dípticos.
+- El requerimiento exige oferta total (100% de partidas) y se factura en tres lineamientos; esto no equivale a permitir postulación parcial.
+- Preservar la `propuesta_ia` original, construida sin leer este documento, para medir el aporte de adjuntos sin fuga de información. Evidencia posterior separada en columnas de trazabilidad del CSV.
+- No alterar sin revisión explícita de la usuaria las etiquetas humanas ya asignadas; `OFICINA` requiere posible reconsideración y `TEXTIL` permanece pendiente.
