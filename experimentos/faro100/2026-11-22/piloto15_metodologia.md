@@ -70,3 +70,9 @@
 - Razonamiento: descalcificador EDTA para muestras de laboratorio no equivale a insumo clínico básico (mascarillas, guantes o jeringas), aunque en términos generales se relaciona con salud.
 - Ficha de especificaciones `592 DESCALCIFICADOR (1).docx` identificada, pero no revisada. El código UNSPSC observado `42181504` corresponde a Sets de hemacitometría y no define la relevancia.
 - 2/120 etiquetas humanas registradas; 118 pendientes. Próximo par `2771-694-COT26` / `OFICINA`.
+
+## Decisión conversacional 3/6 (22-11-2026)
+- `2771-694-COT26` / `OFICINA` = `informacion_insuficiente`, decisión humana sin preselección.
+- Motivo: rubro de insumos de oficina no confirma equipamiento de impresión para publicidad (pendones/gigantografías); faltan productos exactos en `ESPECIFICACIONES TÉCNICAS.pdf`. La tercerización podría habilitar este trabajo, pero no está definida como capacidad del perfil.
+- Propuesta para futuro, **no implementar aún**: apartado de compras de interés potencial por rubros afines / servicios especializados y pregunta opcional sobre tercerización en la ficha del cliente. Evitar contaminar las capacidades congeladas del experimento.
+- 3/120 etiquetas humanas registradas; siguiente `2771-694-COT26` / `TEXTIL`.
