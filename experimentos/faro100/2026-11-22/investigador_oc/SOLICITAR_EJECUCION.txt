@@ -3,3 +3,5 @@ Objetivo: 48 órdenes restantes de la cola congelada, índices 2 a 49 (NO volver
 Prerrequisito obligatorio: pasar 6 pruebas de normalización, seguridad por RUT y valores monetarios.
 Credencial: GitHub Actions Secret CHILECOMPRA_TICKET. Solo lectura.
 Artefacto: CSV de estado, ítems y resumen; no publicar JSON original ni credenciales.
+
+Reintento experimental autorizado por solicitud original; 2026-11-25. Corrección de prueba: seleccionar la última cantidad textual de servicios (69, no 3).
