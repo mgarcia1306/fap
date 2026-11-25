@@ -115,8 +115,8 @@ def number(value):
 def service_quantity_hint(description):
     """Pista textual únicamente; no sustituye la cantidad oficial."""
     description = str(description or "").upper()
-    match = re.search(r"\b(\d{1,6})\s+(SERVICIOS?|ALMUERZOS?|COLACIONES?|PERSONAS?)\b", description)
-    return match.group(0) if match else ""
+    matches = list(re.finditer(r"\b(\d{1,6})\s+(SERVICIOS?|ALMUERZOS?|COLACIONES?|PERSONAS?)\b", description))
+    return matches[-1].group(0) if matches else ""
 
 
 def monetary_quality(item):
