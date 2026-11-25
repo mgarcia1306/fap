@@ -1,0 +1,5 @@
+Piloto manual autorizado el 2026-11-25.
+Acción: consultar solo la primera OC de cola_piloto_49_OC.csv.
+Código: 3334-547-AG26.
+RUT esperado: 15.326.117-2.
+No ampliar sin validar el resultado.
