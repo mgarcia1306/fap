@@ -1,5 +1,5 @@
-Piloto manual autorizado el 2026-11-25.
-Acción: consultar solo la primera OC de cola_piloto_49_OC.csv.
-Código: 3334-547-AG26.
-RUT esperado: 15.326.117-2.
-No ampliar sin validar el resultado.
+Piloto FARO OC: segunda ejecución autorizada por la usuaria el 25-11-2026.
+Objetivo: 48 órdenes restantes de la cola congelada, índices 2 a 49 (NO volver a consultar la primera OC).
+Prerrequisito obligatorio: pasar 6 pruebas de normalización, seguridad por RUT y valores monetarios.
+Credencial: GitHub Actions Secret CHILECOMPRA_TICKET. Solo lectura.
+Artefacto: CSV de estado, ítems y resumen; no publicar JSON original ni credenciales.
