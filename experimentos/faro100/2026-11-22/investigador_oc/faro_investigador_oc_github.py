@@ -10,6 +10,7 @@ import time
 import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
+from decimal import Decimal, InvalidOperation
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -20,7 +21,11 @@ COLUMNS = ["codigo_oc","rut","nombre_oc","estado_oc","evidencia_estado",
            "nombre_proveedor","items_en_detalle","fecha_consulta_utc","item_n",
            "correlativo","codigo_categoria","categoria","codigo_producto",
            "especificacion_comprador","especificacion_proveedor","cantidad",
-           "moneda","precio_neto","total","fuente"]
+           "moneda","precio_neto","total","fuente",
+           "precio_neto_original","total_original","cantidad_original",
+           "cantidad_de_servicios_en_texto","calidad_monto",
+           "interpretacion_monto","requiere_revision_monetaria",
+           "monto_oc_total_original","monto_oc_total_neto_original"]
 
 
 def normalize_rut(value):
@@ -95,6 +100,40 @@ def evidence_status(raw):
     return "estado_sin_acreditar"
 
 
+
+def number(value):
+    """Valida valores sin inferir la unidad comercial de PrecioNeto."""
+    if value is None or str(value).strip() == "":
+        return None
+    try:
+        n = Decimal(str(value))
+        return n if n.is_finite() else None
+    except (InvalidOperation, ValueError):
+        return None
+
+
+def service_quantity_hint(description):
+    """Pista textual únicamente; no sustituye la cantidad oficial."""
+    description = str(description or "").upper()
+    match = re.search(r"\b(\d{1,6})\s+(SERVICIOS?|ALMUERZOS?|COLACIONES?|PERSONAS?)\b", description)
+    return match.group(0) if match else ""
+
+
+def monetary_quality(item):
+    """Señala incertidumbre: NO se calculan totales ni ingresos."""
+    quantity = number(item.get("Cantidad"))
+    price = number(item.get("PrecioNeto"))
+    total = number(item.get("Total"))
+    if price is None and total is None:
+        return "sin_montos", True
+    if total == 0 and price is not None and price > 0:
+        return "total_cero_con_precio_neto", True
+    if total is None:
+        return "total_ausente", True
+    if total < 0 or (quantity is not None and quantity <= 0):
+        return "valor_atipico", True
+    return "valores_informados_sin_validar", True
+
 def normalize_order(body, code, expected_rut):
     matches = [oc for oc in entry_list(body)
                if str(oc.get("Codigo", "")).upper() == code]
@@ -120,6 +159,8 @@ def normalize_order(body, code, expected_rut):
     }
     rows = []
     for n, item in enumerate(items, 1):
+        calidad, revisar = monetary_quality(item)
+        qhint = service_quantity_hint(item.get("EspecificacionComprador", ""))
         rows.append({
             **meta, "item_n": n, "correlativo": item.get("Correlativo", ""),
             "codigo_categoria": item.get("CodigoCategoria", ""),
@@ -129,7 +170,16 @@ def normalize_order(body, code, expected_rut):
             "especificacion_proveedor": item.get("EspecificacionProveedor", ""),
             "cantidad": item.get("Cantidad", ""), "moneda": item.get("Moneda", ""),
             "precio_neto": item.get("PrecioNeto", ""), "total": item.get("Total", ""),
-            "fuente": API_URL + "?codigo=" + code
+            "fuente": API_URL + "?codigo=" + code,
+            "precio_neto_original": json.dumps(item.get("PrecioNeto"), ensure_ascii=False),
+            "total_original": json.dumps(item.get("Total"), ensure_ascii=False),
+            "cantidad_original": json.dumps(item.get("Cantidad"), ensure_ascii=False),
+            "cantidad_de_servicios_en_texto": qhint,
+            "calidad_monto": calidad,
+            "interpretacion_monto": "NO_INFERIR_INGRESOS: valores originales; revisar unidad, impuestos y estado",
+            "requiere_revision_monetaria": revisar,
+            "monto_oc_total_original": json.dumps(oc.get("Total"), ensure_ascii=False),
+            "monto_oc_total_neto_original": json.dumps(oc.get("TotalNeto"), ensure_ascii=False),
         })
     return meta, rows
 
@@ -208,14 +258,15 @@ def main():
     parser.add_argument("--cola", type=Path, required=True)
     parser.add_argument("--salida", type=Path, default=Path("salida_oc"))
     parser.add_argument("--limite", type=int, default=1)
+    parser.add_argument("--desde", type=int, default=1, help="Índice 1-based: usar 2 para omitir la primera OC ya descargada")
     parser.add_argument("--ejecutar", action="store_true")
     args = parser.parse_args()
-    if args.limite < 1 or args.limite > 49:
-        parser.error("--limite debe estar entre 1 y 49 (piloto experimental)")
+    if args.limite < 1 or args.limite > 49 or args.desde < 1 or args.desde + args.limite - 1 > 49:
+        parser.error("El tramo --desde/--limite debe estar dentro de las 49 OC congeladas")
     ticket = os.environ.get("MERCADOPUBLICO_TICKET", "").strip()
     if args.ejecutar and not ticket:
         parser.error("Falta variable MERCADOPUBLICO_TICKET")
-    queue = read_queue(args.cola)[:args.limite]
+    queue = read_queue(args.cola)[args.desde - 1:args.desde - 1 + args.limite]
     result = run(queue, args.salida, ticket, args.ejecutar)
     print(json.dumps(result, ensure_ascii=False))
     return 1 if args.ejecutar and result["oc_ok"] != len(queue) else 0
