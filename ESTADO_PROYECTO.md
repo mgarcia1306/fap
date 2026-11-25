@@ -1,3 +1,80 @@
+# FARO · Estado vigente verificado — 25 de noviembre de 2026
+
+**Ámbito:** repositorio mgarcia1306/fap, ramas main y experimento/faro-100-muestra-20261122; Supabase radar_faro (kqoxbbhazxlnqifzvfzh).
+
+**Estado de verificación:** consultas operativas de solo lectura realizadas el 25 de noviembre de 2026, hacia las 18:26 hora Chile (21:26 UTC). Los conteos cambian con la ingesta. **El historial al final fue escrito en fechas anteriores y no reemplaza esta sección vigente.**
+
+## ESTADO VIGENTE — 2026-11-25
+
+### 1. Monitor y almacenamiento
+
+| Componente | Resultado comprobado | Alcance |
+|---|---|---|
+| Supabase radar_faro | ACTIVE_HEALTHY; tamaño real 128.380.051 bytes (~122 MiB) | Estado en momento de la consulta, no garantía futura |
+| Oportunidades | 25.424, todos con código distinto; 0 títulos, fechas de publicación o nombres de estado faltantes | Integridad básica, no cobertura completa del mercado |
+| Cambios de oportunidad | 38.074 filas y actividad reciente | Escrito en la tabla, no prueba de todas las ejecuciones |
+| Sincronización de actualidad | Estado correcto; último éxito 2026-11-25 21:18:07 UTC (18:18 Chile) | Último registro de cursor de esa fuente |
+| Recuperación histórica | Última ejecución 2026-11-20 01:35:30 UTC; workflow manual | Pausada por diseño; cursor histórico no está al día |
+| Nuevas oportunidades en 24 horas | 5.096 detecciones | No equivale a 5.096 publicaciones hechas ese día |
+| Cambios en 24 horas | 12.902 filas nuevas | No equivale a compras únicas |
+| Vigilancia de espacio | Automatización existente «Vigilar espacio FARO» habilitada; último run completado | No duplicar |
+
+El workflow de actualidad en main usa workflow_dispatch activado externamente por Cloudflare; el monitor consulta una ventana retrospectiva de **90 minutos**. La recuperación histórica está pausada y disponible únicamente de forma manual. **Los datos prueban escrituras recientes, pero no prueban que no existan intervalos perdidos.**
+
+El repositorio privado faro-licitaciones sigue accesible; despliegue, frontend y formulario no fueron auditados aquí.
+
+### 2. Intervalos sospechosos del monitor — no pérdidas confirmadas
+
+Analizados buckets de 15 minutos desde el inicio de la cohorte continua, filtrados por el horario operativo del código de main: **08:00–00:00 diariamente y 00:00–02:00 cuando el día anterior fue hábil**. Los intervalos excluyen las pausas fuera de horario. Un bucket sin escrituras no demuestra que el workflow no haya corrido, ni que se perdieran compras.
+
+| Tramo horario de Chile | Tiempo sin escrituras observadas |
+|---|---:|
+| 21 nov., 00:00–02:00 | **120 minutos** |
+| 25 nov., 00:45–02:00 | 75 minutos |
+| 21 nov., 20:15–21:15 | 60 minutos |
+| 21 nov., 23:00–00:00 | 60 minutos |
+| 21 nov., 21:30–22:15 | 45 minutos |
+| 22 nov., 08:45–09:30 | 45 minutos |
+| 24 nov., 01:15–02:00 | 45 minutos |
+
+**Prioridad:** cotejar los logs de GitHub y Cloudflare del **21-nov., 00:00–02:00**. Al exceder 90 minutos de retrospectiva, hay riesgo teórico de omisión si realmente faltaron ejecuciones. Comprobar publicaciones externas antes de afirmar pérdidas o plantear backfill. No modificar cursor, cron ni datos sin autorización.
+
+**Relojes:** la resta detectada_at - fecha_publicacion arroja ~3 h 04 min a ~3 h 43 min en la cohorte; el sistema recibe fechas en hora de pared Chile con tratamiento especial. Esta diferencia no es una métrica válida de latencia real hasta normalizar los husos horarios.
+
+### 3. FARO-100 y clasificador — rama experimental
+
+- Rama experimento/faro-100-muestra-20261122: **73 commits delante de main y 0 detrás** en el cotejo; no integrada.
+- Muestra: **100 compras, 8 perfiles hipotéticos, 800 pares posibles**, con 100/100 detalles en el run histórico GitHub Actions **44987485178**.
+- **120/120 pares del piloto de 15 compras tienen etiqueta humana registrada** en piloto15_etiquetado.csv. Las frases antiguas de este documento que dicen «pendientes» ya no están vigentes.
+- A0 y B1/C1: ensayos registrados en metodo_A0_ensayo_exploratorio.md y metodos_B1_C1_ensayo_exploratorio.md; 81/120 y 107/120 acuerdos exactos, respectivamente, pero **no son estimaciones ciegas de precisión ni una evaluación de un modelo de IA**.
+- Las 85 compras restantes tienen 680 predicciones documentadas en holdout85_A0_B1_C1_resultados.md; no hay verdad humana completa para esos 680 pares.
+- La usuaria aportó **60 evaluaciones adicionales realizadas por Claude con acceso a anexos**; son segunda evaluación de IA y no deben reemplazar las etiquetas humanas originales.
+- **Regla obligatoria:** en Compra Ágil se cotiza la TOTALIDAD de bienes, servicios y requisitos solicitados. Coincidencia parcial no significa oportunidad cotizable.
+- Diseño y código de clasificador v2 + pruebas sintéticas existen en la rama experimental, **no desplegados**; extraer ítems completos y verificar capacidades comerciales reales sigue pendiente.
+
+### 4. Investigador de órdenes de compra (OC)
+
+- Scripts y archivos del piloto en experimentos/faro100/2026-11-22/investigador_oc/: cola de 49 OC (19 de proveedor RUT 15.326.117-2 y 30 de 78.247.235-6), script Python, workflow y archivo de solicitud.
+- Workflow experimental: .github/workflows/faro_oc_piloto_experimental.yml; activado por push a SOLICITAR_EJECUCION.txt, sin cron, ticket vía Secret **CHILECOMPRA_TICKET**, límite de **una sola OC**.
+- El archivo disparador fue publicado en commit **eb26227905b735d35381b38bd4d7babdf4c42e55**. Orden prevista: **3334-547-AG26**, RUT esperado 15.326.117-2.
+- **La ejecución, su resultado y los ítems descargados siguen NO VERIFICADOS:** los medios de consulta disponibles no entregaron un run, log ni artefacto concluyente. Publicar un commit no equivale a confirmar ejecución. **No se relanzó ni se amplió a 49.**
+
+### 5. Pendientes prioritarios
+
+1. Obtener el ID real del run de la prueba OC, inspeccionar jobs, logs y artefactos; si no existe run, diagnosticar disparador antes de reintentar.
+2. Contrastar las franjas sospechosas del monitor con logs GitHub/Cloudflare y consulta oficial de publicaciones, distinguiendo ejecuciones sin novedades de fallas reales.
+3. Si se verifica un hueco, diseñar recuperación controlada sin modificar el cursor ni procesos de producción sin autorización.
+4. Mantener la clasificación v2 y perfilado comercial como experimentos; no conectar a clientes sin validación completa.
+5. Auditar separadamente frontend y formulario antes de planificar cambios sobre ese repositorio.
+
+**Protección:** ninguna modificación de main, de procesos activos, credenciales, Supabase o automatizaciones; la única escritura de esta etapa es esta actualización documental sobre la rama experimental.
+
+---
+
+# ARCHIVO HISTÓRICO (estado previo, principalmente 22 de noviembre de 2026)
+
+> Se preservan los antecedentes históricos originales para trazabilidad. Las afirmaciones de avance y pendientes siguientes deben interpretarse según la fecha en que fueron redactadas; la sección vigente de arriba prevalece.
+
 # ESTADO DEL PROYECTO · FARO (repositorio fap)
 
 **Última revisión documental:** 2026-11-22  
