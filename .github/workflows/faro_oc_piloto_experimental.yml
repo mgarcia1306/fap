@@ -1,0 +1,57 @@
+name: FARO - Piloto de detalle OC (experimental)
+
+on:
+  push:
+    branches:
+      - experimento/faro-100-muestra-20261122
+    paths:
+      - experimentos/faro100/2026-11-22/investigador_oc/SOLICITAR_EJECUCION.txt
+
+permissions:
+  contents: read
+
+concurrency:
+  group: faro-oc-piloto-experimental
+  cancel-in-progress: false
+
+jobs:
+  investigar-una-oc:
+    if: github.ref == 'refs/heads/experimento/faro-100-muestra-20261122'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: experimentos/faro100/2026-11-22/investigador_oc
+    steps:
+      - name: Checkout exclusivo de rama experimental
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Previsualizar sin red
+        run: |
+          python -m py_compile faro_investigador_oc_github.py
+          python faro_investigador_oc_github.py --cola cola_piloto_49_OC.csv --limite 1 --salida resultado_previsualizacion
+      - name: Consultar UNA orden con ticket del Secret
+        env:
+          MERCADOPUBLICO_TICKET: ${{ secrets.CHILECOMPRA_TICKET }}
+        run: |
+          if [ -z "$MERCADOPUBLICO_TICKET" ]; then
+            echo 'CHILECOMPRA_TICKET no disponible para este workflow' >&2
+            exit 1
+          fi
+          python faro_investigador_oc_github.py --cola cola_piloto_49_OC.csv --limite 1 --salida resultado_real --ejecutar
+      - name: Publicar solo CSV y resumen (sin JSON bruto)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: faro-oc-prueba-una-orden
+          path: |
+            experimentos/faro100/2026-11-22/investigador_oc/resultado_real/estado_cola.csv
+            experimentos/faro100/2026-11-22/investigador_oc/resultado_real/items_historicos.csv
+            experimentos/faro100/2026-11-22/investigador_oc/resultado_real/resumen.json
+          if-no-files-found: warn
+          retention-days: 3
