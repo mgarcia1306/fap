@@ -37,7 +37,7 @@ Analizados buckets de 15 minutos desde el inicio de la cohorte continua, filtrad
 | 22 nov., 08:45–09:30 | 45 minutos |
 | 24 nov., 01:15–02:00 | 45 minutos |
 
-**Prioridad:** cotejar los logs de GitHub y Cloudflare del **21-nov., 00:00–02:00**. Al exceder 90 minutos de retrospectiva, hay riesgo teórico de omisión si realmente faltaron ejecuciones. Comprobar publicaciones externas antes de afirmar pérdidas o plantear backfill. No modificar cursor, cron ni datos sin autorización.
+**Contexto aportado por la usuaria (25-nov):** el 21 de noviembre Mercado Público estaba implementando actualizaciones y pudo experimentar disponibilidad parcial. Es una explicación plausible, **no una verificación independiente del estado del portal**, y no se investigarán por ahora las interrupciones de esa jornada por decisión de la usuaria. Los períodos sin escrituras no equivalen a pérdidas comprobadas. No modificar cursor, cron ni datos sin autorización.
 
 **Relojes:** la resta detectada_at - fecha_publicacion arroja ~3 h 04 min a ~3 h 43 min en la cohorte; el sistema recibe fechas en hora de pared Chile con tratamiento especial. Esta diferencia no es una métrica válida de latencia real hasta normalizar los husos horarios.
 
@@ -57,11 +57,11 @@ Analizados buckets de 15 minutos desde el inicio de la cohorte continua, filtrad
 - Scripts y archivos del piloto en experimentos/faro100/2026-11-22/investigador_oc/: cola de 49 OC (19 de proveedor RUT 15.326.117-2 y 30 de 78.247.235-6), script Python, workflow y archivo de solicitud.
 - Workflow experimental: .github/workflows/faro_oc_piloto_experimental.yml; activado por push a SOLICITAR_EJECUCION.txt, sin cron, ticket vía Secret **CHILECOMPRA_TICKET**, límite de **una sola OC**.
 - El archivo disparador fue publicado en commit **eb26227905b735d35381b38bd4d7babdf4c42e55**. Orden prevista: **3334-547-AG26**, RUT esperado 15.326.117-2.
-- **La ejecución, su resultado y los ítems descargados siguen NO VERIFICADOS:** los medios de consulta disponibles no entregaron un run, log ni artefacto concluyente. Publicar un commit no equivale a confirmar ejecución. **No se relanzó ni se amplió a 49.**
+- **EJECUCIÓN REAL VERIFICADA:** GitHub Actions run [45564470518](https://github.com/mgarcia1306/fap/actions/runs/45564470518), job `investigar-una-oc`, conclusión `success` (25-nov 2026, 06:57 UTC). Ticket disponible en entorno (valor no expuesto); `ok_api`, **1/1 OC**, **2 ítems**, **0 errores**. Artefacto `faro-oc-prueba-una-orden` ID **14999515826** ([descarga](https://github.com/mgarcia1306/fap/actions/runs/45564470518/artifacts/14999515826)), 1.273 bytes, 3 archivos CSV/JSON; cotejado con los logs originales y descargado de GitHub. **OC 3334-547-AG26, proveedor RUT 15.326.117-2 (ROSA MARIELA RIOS VERA), estado `Aceptada` (NO equivale a recepción conforme):** (1) 3 coffee breaks para 23 personas, 69 servicios en total, PrecioNeto CLP 450.000; (2) 4 servicios de almuerzo para 23 personas, 92 almuerzos en total, PrecioNeto CLP 779.000. Ambos UNSPSC `90101603` y categoría `90101600`. **Campo `Total=0` en ambas líneas** pese a PrecioNeto positivo: revisar semántica antes de agregaciones monetarias. No hay datos para acreditar entrega, pago o capacidad actual de suministro. **No se relanzó ni se amplió a 49.**
 
 ### 5. Pendientes prioritarios
 
-1. Obtener el ID real del run de la prueba OC, inspeccionar jobs, logs y artefactos; si no existe run, diagnosticar disparador antes de reintentar.
+1. **Completado:** verificar run OC 45564470518, jobs, log, artefacto y dos líneas de servicios de alimentación. **Siguiente acción:** diseñar revisión de `PrecioNeto`/`Total` y criterios de normalización antes de autorizar ampliación de 1 a 49 OC.
 2. Contrastar las franjas sospechosas del monitor con logs GitHub/Cloudflare y consulta oficial de publicaciones, distinguiendo ejecuciones sin novedades de fallas reales.
 3. Si se verifica un hueco, diseñar recuperación controlada sin modificar el cursor ni procesos de producción sin autorización.
 4. Mantener la clasificación v2 y perfilado comercial como experimentos; no conectar a clientes sin validación completa.
