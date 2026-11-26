@@ -37,13 +37,14 @@ jobs:
         run: |
           python -m py_compile descargar_adjuntos_faro100.py revisar_anexos_oc.py
           python -m unittest -v test_adjuntos_faro100.py test_revisar_anexos_oc.py
-      - name: Diagnóstico de solo listado para las tres OC ambiguas
-        run: python revisar_anexos_oc.py --consultar --salida salida_diagnostico_anexos_oc
-      - name: Guardar resultado sin descargar PDF ni JSON original
+      - name: Consultar y descargar COT documentadas; AG restante solo diagnóstico
+        run: |
+          python revisar_anexos_oc.py --consultar --descargar --mapa mapeo_oc_cot_anexos.csv --salida salida_diagnostico_anexos_oc
+      - name: Guardar anexos y resumen sin JSON original de órdenes
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: faro-diagnostico-anexos-oc-ag26
-          path: experimentos/faro100/2026-11-22/salida_diagnostico_anexos_oc/resultado_inspeccion.json
+          name: faro-anexos-oc-mapeadas-cot26
+          path: experimentos/faro100/2026-11-22/salida_diagnostico_anexos_oc/
           if-no-files-found: warn
           retention-days: 7
