@@ -38,8 +38,8 @@ def crear_sesion():
     return sesion
 
 
-def listar(sesion):
-    respuesta = sesion.get(f"{BASE}/listar/{CODIGO}", timeout=(15, 45))
+def listar(sesion, codigo=CODIGO):
+    respuesta = sesion.get(f"{BASE}/listar/{codigo}", timeout=(15, 45))
     respuesta.raise_for_status()
     datos = respuesta.json()
     if not isinstance(datos, dict) or datos.get("success") != "OK":
@@ -87,9 +87,9 @@ def descargar_uno(sesion, archivo, carpeta):
         temporal.unlink(missing_ok=True)
 
 
-def ejecutar(carpeta, sesion):
+def ejecutar(carpeta, sesion, codigo=CODIGO):
     carpeta.mkdir(parents=True, exist_ok=True)
-    archivos = listar(sesion)
+    archivos = listar(sesion, codigo)
     correctos, errores = [], []
     for indice, archivo in enumerate(archivos, 1):
         try:
@@ -99,7 +99,7 @@ def ejecutar(carpeta, sesion):
         except (requests.RequestException, ValueError, KeyError, TypeError, OSError) as exc:
             errores.append({"id": str(archivo.get("id", "")), "error": str(exc)})
             print(f"[{indice}/{len(archivos)}] ERROR {type(exc).__name__}: {exc}", flush=True)
-    resumen = {"codigo": CODIGO, "fecha_utc": datetime.now(timezone.utc).isoformat(),
+    resumen = {"codigo": codigo, "fecha_utc": datetime.now(timezone.utc).isoformat(),
                "adjuntos_listados": len(archivos), "descargados": len(correctos),
                "fallidos": len(errores), "archivos": correctos, "errores": errores}
     (carpeta / "resultado_adjuntos.json").write_text(
@@ -109,10 +109,15 @@ def ejecutar(carpeta, sesion):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=HERE / "salida_adjuntos" / CODIGO)
+    parser.add_argument("--codigo", default=CODIGO, help="Código COT de Compra Ágil")
+    parser.add_argument("--output", type=Path, default=None)
     args = parser.parse_args()
+    if not re.fullmatch(r"\d+-\d+-COT\d{2}", args.codigo, flags=re.IGNORECASE):
+        parser.error("--codigo requiere código COT de Compra Ágil; las OC AG se revisan por separado")
+    codigo = args.codigo.upper()
+    salida = args.output or (HERE / "salida_adjuntos" / codigo)
     with crear_sesion() as sesion:
-        resumen = ejecutar(args.output, sesion)
+        resumen = ejecutar(salida, sesion, codigo)
     print(json.dumps({k: resumen[k] for k in ("codigo", "adjuntos_listados", "descargados", "fallidos")}))
     return 0 if resumen["fallidos"] == 0 else 1
 
