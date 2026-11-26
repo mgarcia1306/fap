@@ -101,12 +101,14 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--salida", type=Path, default=Path("salida_inspeccion_oc"))
     p.add_argument("--mapa", type=Path, help="CSV documentado codigo_oc,codigo_cot,fuente_vinculo")
+    p.add_argument("--codigos", nargs="+", default=PENDIENTES, help="OC AG que se van a revisar; omite otras para evitar duplicar descargas")
     p.add_argument("--consultar", action="store_true", help="Realiza GET de listado, sin descargar por defecto")
     p.add_argument("--descargar", action="store_true", help="Descarga solo anexos con mapeo COT explícito")
     args = p.parse_args()
     mapeos = leer_mapeo(args.mapa)
+    codigos = list(dict.fromkeys(x.strip().upper() for x in args.codigos))
     with base.crear_sesion() as sesion:
-        summary = revisar(sesion, PENDIENTES, mapeos, args.salida,
+        summary = revisar(sesion, codigos, mapeos, args.salida,
                          consultar=args.consultar, descargar=args.descargar)
     print(json.dumps({r["codigo_oc"]: r["estado"] for r in summary["resultados"]}, ensure_ascii=False))
     return 0
