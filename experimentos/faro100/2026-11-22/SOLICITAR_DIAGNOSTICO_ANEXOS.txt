@@ -1,2 +1,4 @@
 Diagnóstico autorizado: 3 códigos OC AG26 de la revisión semántica (3143-144-AG26, 1057539-9739-AG26, 1755-407-AG26).
 Realizar únicamente GET de listado de adjuntos sin descargar archivos, sin secretos ni Supabase. No afirmar correspondencia OC-COT sin evidencia.
+
+Segunda ejecución autorizada: OC.nombre_oc documenta 3143-40-COT26 y 1057539-5017-COT26; descargar anexos de esas dos COT solamente. Para 1755-407-AG26 mantener diagnóstico, sin atribuir anexos sin código COT.
