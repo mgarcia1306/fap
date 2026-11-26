@@ -1,0 +1,49 @@
+name: FARO - Diagnóstico anexos de OC (experimental)
+
+on:
+  push:
+    branches:
+      - experimento/faro-100-muestra-20261122
+    paths:
+      - experimentos/faro100/2026-11-22/SOLICITAR_DIAGNOSTICO_ANEXOS.txt
+
+permissions:
+  contents: read
+
+concurrency:
+  group: faro-anexos-oc-experimental
+  cancel-in-progress: false
+
+jobs:
+  diagnostico:
+    if: github.ref == 'refs/heads/experimento/faro-100-muestra-20261122'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    defaults:
+      run:
+        working-directory: experimentos/faro100/2026-11-22
+    steps:
+      - name: Checkout rama experimental sin credenciales persistentes
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar requests
+        run: python -m pip install 'requests>=2.31,<3'
+      - name: Pruebas sin red, incluyendo descargador existente
+        run: |
+          python -m py_compile descargar_adjuntos_faro100.py revisar_anexos_oc.py
+          python -m unittest -v test_adjuntos_faro100.py test_revisar_anexos_oc.py
+      - name: Diagnóstico de solo listado para las tres OC ambiguas
+        run: python revisar_anexos_oc.py --consultar --salida salida_diagnostico_anexos_oc
+      - name: Guardar resultado sin descargar PDF ni JSON original
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: faro-diagnostico-anexos-oc-ag26
+          path: experimentos/faro100/2026-11-22/salida_diagnostico_anexos_oc/resultado_inspeccion.json
+          if-no-files-found: warn
+          retention-days: 7
