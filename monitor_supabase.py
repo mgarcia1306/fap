@@ -269,6 +269,14 @@ def normalize(item):
         "fecha_publicacion", "fecha_cierre", "fecha_ultimo_cambio", "monto")}
     digest = hashlib.sha256(json.dumps(signature, sort_keys=True, ensure_ascii=False,
                                        default=str).encode("utf-8")).hexdigest()
+    # Preserve the legacy fingerprint: normalization must not create history.
+    institucion = item.get("institucion") or {}
+    montos = item.get("montos") or {}
+    record["organismo"] = institucion.get("organismo_comprador") or record.get("organismo")
+    record["region_codigo"] = institucion.get("region")
+    record["moneda"] = montos.get("moneda")
+    if montos.get("monto_disponible") is not None:
+        record["monto"] = montos["monto_disponible"]
     return record, digest
 
 
