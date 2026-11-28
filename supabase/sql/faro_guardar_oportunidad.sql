@@ -19,12 +19,14 @@ begin
   end if;
   insert into public.oportunidades (
     fuente,codigo,titulo,descripcion,organismo,estado_codigo,estado_nombre,
-    monto,fecha_publicacion,fecha_cierre,fecha_ultimo_cambio,datos_originales,actualizada_at
+    monto,region_codigo,moneda,fecha_publicacion,fecha_cierre,fecha_ultimo_cambio,datos_originales,actualizada_at
   )
   values (
     v_fuente,v_codigo,p_registro->>'titulo',p_registro->>'descripcion',
-    p_registro->>'organismo',p_registro->>'estado_codigo',p_registro->>'estado_nombre',
-    (p_registro->>'monto')::numeric,
+    coalesce(p_registro#>>'{datos_originales,institucion,organismo_comprador}',p_registro->>'organismo'),p_registro->>'estado_codigo',p_registro->>'estado_nombre',
+    coalesce(p_registro#>>'{datos_originales,montos,monto_disponible}',p_registro->>'monto')::numeric,
+    (p_registro#>>'{datos_originales,institucion,region}')::integer,
+    p_registro#>>'{datos_originales,montos,moneda}',
     (p_registro->>'fecha_publicacion')::timestamptz,
     (p_registro->>'fecha_cierre')::timestamptz,
     v_cambio, p_registro->'datos_originales',now()
@@ -36,6 +38,8 @@ begin
     estado_codigo=excluded.estado_codigo,
     estado_nombre=excluded.estado_nombre,
     monto=excluded.monto,
+    region_codigo=excluded.region_codigo,
+    moneda=excluded.moneda,
     fecha_publicacion=excluded.fecha_publicacion,
     fecha_cierre=excluded.fecha_cierre,
     fecha_ultimo_cambio=excluded.fecha_ultimo_cambio,
@@ -58,7 +62,7 @@ begin
   on conflict (oportunidad_id,huella_cambio) do nothing;
   return v_id;
 end
-$function$
+$function$;
 
 revoke all on function public.faro_guardar_oportunidad(jsonb,text) from public, anon, authenticated;
 grant execute on function public.faro_guardar_oportunidad(jsonb,text) to service_role;
