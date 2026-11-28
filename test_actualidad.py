@@ -25,6 +25,19 @@ class FakeDB:
         self.cursors.append((dt,count,fuente))
 
 class ActualidadTest(unittest.TestCase):
+    def test_normalizacion_anidada_conserva_huella(self):
+        item = compra("NORMAL-1-COT26", "2026-11-20T19:30:00Z",
+                      "2026-11-20 19:00")
+        _, legacy = normalize(item)
+        item["institucion"] = {"organismo_comprador": "Municipalidad", "region": 14}
+        item["montos"] = {"monto_disponible": 450000, "moneda": "CLP"}
+        record, digest = normalize(item)
+        self.assertEqual(digest, legacy)
+        self.assertEqual(record["organismo"], "Municipalidad")
+        self.assertEqual(record["region_codigo"], 14)
+        self.assertEqual(record["monto"], 450000)
+        self.assertEqual(record["moneda"], "CLP")
+
     def test_estado_glosa_api_real(self):
         item = compra("GLS-1-COT26", "2026-11-20T19:30:00Z",
                       "2026-11-20 19:00")
